@@ -1,0 +1,21 @@
+body {
+    margin: 20%;
+    font-size: 20pt;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+
+    /* gradient background license: MIT */
+    /* https://www.makeuseof.com/css-background-gradients/ */
+    background-image: linear-gradient(to right, #2c3e50, #388c99);
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+    /* background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2%); */
+    /* background-image: linear-gradient(to right, #141e30, #243b55); */
+}
+
+a:visited {
+    color: #c2a1ff;
+}
+
+a {
+    color: #63a8ec;
+}
