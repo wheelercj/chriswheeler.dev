@@ -1,6 +1,8 @@
 +++
 title = 'How to use colors in terminals'
 date = 2022-03-24T23:25:28-08:00
+tags = []
+description = "You don't need another dependency to color text."
 +++
 
 ![colors_in_terminal.png](/colors_in_terminal.png)

@@ -2,6 +2,8 @@
 title = 'Which language should you learn first?'
 date = 2023-10-27T10:52:47-08:00
 lastmod = 2024-01-13T17:10:00-08:00
+tags = []
+description = "Don't spend too much time choosing."
 +++
 
 Choosing a programming language can be difficult. Here are notes on what some languages are good for.

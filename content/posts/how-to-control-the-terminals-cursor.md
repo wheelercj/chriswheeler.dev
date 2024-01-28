@@ -2,9 +2,11 @@
 title = "How to control the terminal's cursor"
 date = 2022-05-09T14:37:51-08:00
 lastmod = 2022-07-22T17:06:00-08:00
+tags = []
+description = "Ever wanted to move the cursor up while printing output in a program?"
 +++
 
-Ever wanted to move the cursor up while printing output in a program? You can. Here's how with C++, and the same string works with any language in many terminals:
+Here's how to control the cursor with C++, and the same string works with any language in many terminals:
 
 ```cpp
 cout << "\x1b[A";

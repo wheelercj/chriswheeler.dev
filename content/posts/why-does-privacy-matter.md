@@ -2,6 +2,8 @@
 title = 'Why does privacy matter?'
 date = 2024-01-13T11:20:53-08:00
 lastmod = 2024-01-13T12:27:00-08:00
+tags = []
+description = "A perspective I haven't heard from others yet."
 +++
 
 Privacy is not about whether you have something to hide. It's about whether bad people can do bad things to you, because security is impossible without privacy.

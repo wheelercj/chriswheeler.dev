@@ -1,6 +1,8 @@
 +++
 title = 'How to print emoji with C++'
 date = 2022-04-28T17:21:23-08:00
+tags = []
+description = "It's tricky because Windows doesn't always use UTF-8"
 +++
 
 ![emoji in terminal](/emoji_in_terminal.png)
