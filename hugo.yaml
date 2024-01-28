@@ -99,7 +99,7 @@ params:
 
   editPost:
     URL: "https://github.com/wheelercj/chriswheeler.dev/content"
-    Text: "Suggest changes"  # edit text
+    Text: "suggest changes"  # edit text
     appendFilePath: true  # to append file path to Edit link
 
   # for search
