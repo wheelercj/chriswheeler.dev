@@ -21,7 +21,7 @@ params:
   title: Chris' Notes
   description: "A blog mostly about software development"
   keywords: [Blog, Portfolio, Software]
-  author: Chris Wheeler
+  # author: Chris Wheeler
   # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto  # auto, dark, or light
