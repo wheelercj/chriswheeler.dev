@@ -113,20 +113,31 @@ params:
     minMatchCharLength: 0
     limit: 10  # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON  # necessary for search
+
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
+    - name: Search
+      url: /search/
       weight: 10
-    - identifier: tags
-      name: tags
-      url: /tags/
-      weight: 20
-    - identifier: TILs
-      name: TILs
-      url: https://til.chriswheeler.dev
-      weight: 30
+#     - identifier: categories
+#       name: categories
+#       url: /categories/
+#       weight: 10
+#     - identifier: tags
+#       name: tags
+#       url: /tags/
+#       weight: 20
+#     - identifier: TILs
+#       name: TILs
+#       url: https://til.chriswheeler.dev
+#       weight: 30
+
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
 markup:
