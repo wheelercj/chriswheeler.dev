@@ -47,7 +47,7 @@ cout << "\x1b[s";  // saves the cursor's location
 cout << "\x1b[u";  // restores the cursor's location
 ```
 
-These are called [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code), and similar ones let you change your output text's color and style. (See [How to use colors in terminals](https://chriswheeler.dev/how-to-use-colors-in-terminals).)
+These are called [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code), and similar ones let you change your output text's color and style. (See [How to use colors in terminals](/posts/how-to-use-colors-in-terminals).)
 
 To make controlling the terminal's cursor easier, [here's a cross-platform library](https://github.com/wheelercj/ynot) I made that you can use. It includes many helpful functions including ones to get the cursor's current coordinates and to get the terminal's size. Windows also has ways to control the cursor that are not-cross platform; an example is below.
 

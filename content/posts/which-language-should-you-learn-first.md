@@ -42,4 +42,4 @@ Don't spend too much time choosing your first programming language. It can be a 
 * [builtwith.com](https://builtwith.com/)  — Find out what websites are Built With
 * [teamblind.com job postings that include the tech the job uses](https://www.teamblind.com/jobs)
 * [Impressive programming languages](https://til.chriswheeler.dev/impressive-programming-languages/)
-* [legally free books](https://chriswheeler.dev/legally-free-books/)
+* [legally free books](/posts/legally-free-books/)

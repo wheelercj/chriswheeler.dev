@@ -36,7 +36,7 @@ One downside of the code above is that `std::wstring`s are not truly cross-platf
 
 ## further reading
 
-* You can change the color of many Unicode symbols by using ANSI codes. See [How to use colors in terminals](https://chriswheeler.dev/how-to-use-colors-in-terminals).
+* You can change the color of many Unicode symbols by using ANSI codes. See [How to use colors in terminals](/posts/how-to-use-colors-in-terminals).
 * [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-Unicode-and-character-sets-no-excuses) by Joel Spolsky
 
 If you want to see all Unicode symbols in your terminal, you can do so easily with Python:
