@@ -3,10 +3,9 @@ title = 'Learning recursion with C++'
 date = 2022-05-02T23:23:49-08:00
 lastmod = 2024-01-14T12:41:00-08:00
 tags = []
-description = "Every programmer should be comfortable with recursion."
 +++
 
-Recursion is a type of loop created by making a function call itself. Here's a recursive function that loops infinitely (until the computer runs out of memory) when called:
+Every programmer should be comfortable with recursion. Recursion is a type of loop created by making a function call itself. Here's a recursive function that loops infinitely (until the computer runs out of memory) when called:
 
 ```cpp
 void print_stars() {

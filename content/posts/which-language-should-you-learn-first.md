@@ -3,10 +3,9 @@ title = 'Which language should you learn first?'
 date = 2023-10-27T10:52:47-08:00
 lastmod = 2024-01-13T17:10:00-08:00
 tags = []
-description = "Don't spend too much time choosing."
 +++
 
-Choosing a programming language can be difficult. Here are notes on what some languages are good for.
+Don't spend too much time choosing your first programming language. It can be a difficult choice to make, so here are some notes on what several languages are good for.
 
 * If you will soon start a course, bootcamp, etc. that might choose a language for you, figure out which one and start learning ahead. It can be good to focus on just one language for a while when you're learning your first language.
 * If you want the easiest starting point, learn Python because it has excellent error messages, a generally beginner-friendly design, and a very active community with tons of guides and places to ask questions.

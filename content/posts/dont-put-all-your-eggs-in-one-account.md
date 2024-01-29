@@ -2,8 +2,9 @@
 title = 'Dont put all your eggs in one account'
 date = 2024-01-23T16:19:35-08:00
 tags = []
-description = "Online accounts can be lost without warning, but making that loss less painful is easy."
 +++
+
+Online accounts can be lost without warning, but making that loss less painful is easy.
 
 {{< rawHTML >}}
 <aside>

@@ -2,12 +2,11 @@
 title = 'How to print emoji with C++'
 date = 2022-04-28T17:21:23-08:00
 tags = []
-description = "It's tricky because Windows doesn't always use UTF-8"
 +++
 
 ![emoji in terminal](/emoji_in_terminal.png)
 
-Emoji and other [Unicode](https://en.wikipedia.org/wiki/Unicode) symbols can be printed with C++ by copying the symbol itself into your code or by using a Unicode code point. You can find emoji and other symbols at sites like [unicode-table.com](https://unicode-table.com) or with a keyboard shortcut (`Windows+.` on Windows, `ctrl+cmd+space` on Mac, and `ctrl+.` on some Linux distros). On Mac and Linux, working with emoji in C++ is straightforward and doesn't require any tricks. With Windows you will need to use a modern terminal like [Windows Terminal](https://aka.ms/terminal) and the code below.
+Printing emoji can be tricky because C++ running in Windows doesn't always support UTF-8. Emoji and other [Unicode](https://en.wikipedia.org/wiki/Unicode) symbols can be printed with C++ by copying the symbol itself into your code or by using a Unicode code point. You can find emoji and other symbols at sites like [unicode-table.com](https://unicode-table.com) or with a keyboard shortcut (`Windows+.` on Windows, `ctrl+cmd+space` on Mac, and `ctrl+.` on some Linux distros). On Mac and Linux, working with emoji in C++ is straightforward and doesn't require any tricks. With Windows you will need to use a modern terminal like [Windows Terminal](https://aka.ms/terminal) and the code below.
 
 ```cpp
 #include <iostream>  // wcout

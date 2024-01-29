@@ -3,7 +3,6 @@ title = 'Getting started with Git and GitHub'
 date = 2021-09-07T14:42:16-08:00
 lastmod = 2023-12-27T23:59:00-08:00
 tags = []
-description = "A bunch of version control resources and some teamwork tips"
 +++
 
 Here are some great resources for learning how to use Git and GitHub. There's more here than any one person will need, so just learn what will be helpful to you in the very near future.

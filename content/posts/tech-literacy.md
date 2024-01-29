@@ -3,10 +3,9 @@ title = 'Tech literacy'
 date = 2024-01-21T10:04:19-08:00
 lastmod = 2024-01-23T15:26:09-08:00
 tags = []
-description = "There's always room for improvements worth their time to make."
 +++
 
-Over years of extensively using computers, there are some tricks I've found that I don't see others use as often as I expect. I'm not affiliated with any of the services, products, or companies mentioned here.
+There's always room for improvements worth their time to make. Over years of extensively using computers, there are some tricks I've found that I don't see others use as often as I expect. I'm not affiliated with any of the services, products, or companies mentioned here.
 
 ## learn about tech gradually and bravely
 

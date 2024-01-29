@@ -3,8 +3,9 @@ title = 'Legally free books'
 date = 2021-04-10T22:11:27-08:00
 lastmod = 2023-12-26T20:39:00-08:00
 tags = []
-description = "A living page with many links to free online books."
 +++
+
+This is a living page with links to free online books.
 
 ## computer science
 
