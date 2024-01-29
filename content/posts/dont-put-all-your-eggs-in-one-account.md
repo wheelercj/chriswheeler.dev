@@ -7,7 +7,7 @@ tags = []
 Online accounts can be lost without warning, but making that loss less painful is easy.
 
 {{< alert info >}}
-Disclosure: there is one referral link marked with an asterisk (*) below that gives me account credit and gives a discount to anyone who signs up for a paid service with it.
+Full disclosure, there is one referral link marked with an asterisk (*) below that gives me account credit and gives a discount to anyone who signs up for a paid service with it.
 {{< /alert >}}
 
 How much do you depend on the services of big tech companies like Google, Apple, or Microsoft? If one of your accounts was suddenly stolen or an algorithm decided to lock it, how devastating would that be? Big companies tend to have little to no customer support, and sometimes no way to recover lost accounts, leading to [many people losing their accounts](https://news.ycombinator.com/item?id=34581090). Someone managed to steal one of my accounts at one of these companies even though they didn't have the random 50-character password nor the time-based 2FA, and account recovery is now locked for that account. However, I did already have automatic forwarding of emails set up and luckily still received everything I needed. The attacker told me (alongside an empty threat) that they stole my account by using a password that had not been that account's password for years. My guess is that they went through the account recovery process using publicy available data about me.
