@@ -1,3 +1,8 @@
+.alert.info { background-color: #084374; }
+.alert.error { background-color: #8c1d26; }
+.alert.success { background-color: #0c5f26; }
+.alert.warning { background-color: #645606; }
+
 .page-header,
 .post-header {
     margin: 24px auto var(--content-gap) auto;
@@ -251,15 +256,6 @@
     color: var(--secondary);
     font-size: 14px;
     font-weight: normal;
-}
-
-.post-content aside {
-    background-color: #084374;
-    border-radius: var(--radius);
-    padding: 15px 20px 0px 20px;
-    margin: 20px 0;
-    line-height: 1.5;
-    overflow-x: auto;
 }
 
 .toc {
