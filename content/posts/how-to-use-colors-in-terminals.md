@@ -42,7 +42,7 @@ To use different colors and styles, you only need to change the second number. F
 
 Or to choose from among 16,777,216 color options, use `\x1b[38;2;R;G;Bm` and replace `R`, `G`, and `B` with numbers each in the range 0-255 that represent red, green, and blue values respectively. This changes the foreground color. To change the background color, the same is true but with `\x1b[48;2;R;G;Bm`.
 
-You can change the color of many emoji/Unicode symbols; see [How to print emoji with C++](https://blog.chriswheeler.dev/how-to-print-emoji-with-cpp) (and Python, and other languages). ANSI escape codes can also be used to control where the cursor is (you can even move the cursor up); see [How to control the terminal's cursor](https://blog.chriswheeler.dev/how-to-control-the-terminals-cursor).
+You can change the color of many emoji/Unicode symbols; see [How to print emoji with C++](https://chriswheeler.dev/how-to-print-emoji-with-cpp) (and Python, and other languages). ANSI escape codes can also be used to control where the cursor is (you can even move the cursor up); see [How to control the terminal's cursor](https://chriswheeler.dev/how-to-control-the-terminals-cursor).
 
 To see some of the possible colors, styles, and combinations of these in your own terminal, try the code below.
 
