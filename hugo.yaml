@@ -83,7 +83,7 @@ params:
 
   socialIcons:
     - name: resume
-      url: "/resume"
+      url: "/resume.html"
     - name: email
       url: "mailto:mail@chriswheeler.dev"
     - name: github
