@@ -73,16 +73,23 @@ params:
         url: tags
 
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Hello!"
+    Content: |
+      I'm Chris Wheeler, a freelance software engineer capable in many topics
+      including fullstack web, script, system, desktop, and compiler development. I've
+      always wanted to be some kind of inventor; someone that makes things that are
+      useful and make people happy. Now I'm finally able to do that by creating software
+      and sharing what I've learned.
 
   socialIcons:
-    # - name: x
-    #   url: "https://x.com/"
-    # - name: stackoverflow
-    #   url: "https://stackoverflow.com"
+    - name: cv
+      url: "/resume.pdf"
+    - name: email
+      url: "mailto:mail@chriswheeler.dev"
     - name: github
       url: "https://github.com/wheelercj"
+    - name: other
+      url: "https://til.chriswheeler.dev/"
 
   # analytics:
   #   google:
