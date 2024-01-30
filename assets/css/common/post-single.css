@@ -1,7 +1,18 @@
-.alert.info { background-color: #084374; }
-.alert.error { background-color: #8c1d26; }
-.alert.success { background-color: #0c5f26; }
-.alert.warning { background-color: #645606; }
+.alert.info {
+    background: var(--alert-info);
+}
+
+.alert.error {
+    background: var(--alert-error);
+}
+
+.alert.success {
+    background: var(--alert-success);
+}
+
+.alert.warning {
+    background: var(--alert-warning);
+}
 
 .page-header,
 .post-header {
