@@ -1,7 +1,7 @@
 +++
 title = 'Legally free books'
 date = 2021-04-10T22:11:27-08:00
-lastmod = 2023-12-26T20:39:00-08:00
+lastmod = 2024-01-29T23:28:58-08:00
 tags = []
 +++
 
@@ -16,7 +16,7 @@ This is a living page with links to free online books.
 * [Beej's Guides](https://beej.us/guide/) to network programming, Unix interprocess communication, and more
 * [Snaptoken's project guides](https://viewsourcecode.org/snaptoken/)
 * [Essential Programming Books by Krzysztof Kowalczyk](https://www.programming-books.io/), the creator of SumatraPDF
-* [_Game Programming Patterns_ by Robert Nystrom](http://gameprogrammingpatterns.com/)
+* [_Game Programming Patterns_ by Robert Nystrom](https://gameprogrammingpatterns.com/)
 * [_Computer Graphics from Scratch_ by Gabriel Gambetta](https://gabrielgambetta.com/computer-graphics-from-scratch/)
 * [_Complete Guide to Test Automation_ by Arnon Axelrod](https://link.springer.com/book/10.1007/978-1-4842-3832-5)
 * [_Handbook of Graph Drawing and Visualization_ by Roberto Tamassia et al.](https://cs.brown.edu/people/rtamassi/gdhandbook/)
@@ -26,7 +26,7 @@ This is a living page with links to free online books.
 * [MIT Press' open access computer books](https://mitpress.mit.edu/search-result-list/?category=COM&collection=open-access-titles) (collection of books)
 * [FreeComputerBooks.com](https://freecomputerbooks.com/) (collection of books)
 * [Flavio Copes' frontend web development books](https://flaviocopes.com/page/ebooks-links/) (collection of books)
-* [Dana C. Ernst's list of free math and programming books](http://danaernst.com/resources/free-and-open-source-textbooks/) (collection of books)
+* [Dana C. Ernst's list of free math and programming books](https://danaernst.com/resources/free-and-open-source-textbooks/) (collection of books)
 * [HN discussion listing free computer science books](https://news.ycombinator.com/item?id=25572852) (collection of books)
 * [Reddit's list of free computer science books](https://www.reddit.com/r/csbooks/) (collection of books)
 
@@ -40,7 +40,7 @@ This is a living page with links to free online books.
 * [_Algorithms for Optimization_ by Kochenderfer and Wheeler](https://algorithmsbook.com/optimization/)
 * [_Algorithm Design_ by Jon Kleinberg and Eva Tardos](https://archive.org/details/AlgorithmDesign1stEditionByJonKleinbergAndEvaTardos2005PDF/mode/2up)
 * [_Algorithms for Modern Hardware_ by Sergey Slotin](https://en.algorithmica.org/hpc/)
-* [_Information Theory, Inference, and Learning Algorithms_ by David J.C. MacKay](http://www.inference.org.uk/mackay/itila/book.html)
+* [_Information Theory, Inference, and Learning Algorithms_ by David J.C. MacKay](https://www.inference.org.uk/mackay/itila/book.html)
 * [_Algorithms and Data Structures – Transition systems_ by Mikkel Nygaard and Erik Meineche Schmidt](https://news.ycombinator.com/item?id=31037988)
 * [_Algorithms_ by Jeff Erickson](https://jeffe.cs.illinois.edu/teaching/algorithms/?)
 * [OpenDSA](https://opendsa-server.cs.vt.edu/home/books) (collection of books)
@@ -84,14 +84,13 @@ Related: [Learning Go](https://til.chriswheeler.dev/intro-to-go/)
 ## math
 
 * [_Probability, Statistics, and Data – A Fresh Approach Using R_ by Darrin Speegle and Bryan Clair](https://mathstat.slu.edu/~speegle/_book/preface.html)
-* [_Probability and Statistics – The Science of Uncertainty_ by Michael J. Evans and Jeffrey S. Rosenthal](http://www.utstat.toronto.edu/mikevans/jeffrosenthal/bookwithTOC.pdf)
 * [_generatingfunctionology_ by Herbert S. Wilf](https://www.math.upenn.edu/~wilf/DownldGF.html)
 * [_BOOK OF PROOF_ by Richard Hammack](https://www.people.vcu.edu/~rhammack/BookOfProof/)
 * [_Mathematics for Computer Science_ by Eric Lehman et al.](https://courses.csail.mit.edu/6.042/spring17/mcs.pdf)
-* [_Discrete Mathematics: An Open Introduction_, 3rd edition by Oscar Levin](http://discrete.openmathbooks.org/dmoi3.html)
-* [_Measure, Integration, & Real Analysis_ by Sheldon Axler](http://measure.axler.net/MIRA.pdf)
+* [_Discrete Mathematics: An Open Introduction_, 3rd edition by Oscar Levin](https://discrete.openmathbooks.org/dmoi3.html)
+* [_Measure, Integration, & Real Analysis_ by Sheldon Axler](https://measure.axler.net/MIRA.pdf)
 * [_Infinite Descent: An introductory pure mathematics textbook_ by Clive Newstead](https://infinitedescent.xyz/)
-* [Dana C. Ernst's list of free math and programming books](http://danaernst.com/resources/free-and-open-source-textbooks/) (collection of books)
+* [Dana C. Ernst's list of free math and programming books](https://danaernst.com/resources/free-and-open-source-textbooks/) (collection of books)
 * Free Ebook Foundation's books on [math](https://github.com/EbookFoundation/free-science-books/blob/master/free-science-books.md#qa-mathematics) and on [math for programmers](https://github.com/EbookFoundation/free-programming-books/blob/master/books/free-programming-books.md#mathematics) (collection of books)
 * American Institute of Mathematics' books [search](https://aimath.org/cgi-bin/library.cgi?database=books) or [list](https://aimath.org/textbooks/approved-textbooks/) (collection of books)
 * [OpenIntro](https://www.openintro.org/) (collection of books)
@@ -111,7 +110,7 @@ Related: [Learning Go](https://til.chriswheeler.dev/intro-to-go/)
 * [archive.org](https://archive.org/) and [an alternate way to search this with typesense](https://books-search.typesense.org/)
 * [Springer's open access books](https://www.springer.com/gp) (if that link doesn't work try [this one](https://link.springer.com/))
 * [Milne Open Textbooks](https://milneopentextbooks.org/)
-* [UPenn's online books page](http://onlinebooks.library.upenn.edu/)
+* [UPenn's online books page](https://onlinebooks.library.upenn.edu/)
 * [Openstax](https://openstax.org/)
 * [Open Textbook Library](https://open.umn.edu/opentextbooks/)
 * [Standard Ebooks](https://standardebooks.org/ebooks)
