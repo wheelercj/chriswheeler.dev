@@ -1,4 +1,4 @@
-baseURL: https://chriswheeler.dev/
+baseURL: "https://chriswheeler.dev/"
 title: Chris' Notes
 languageCode: en-us
 theme: PaperMod
@@ -22,6 +22,7 @@ params:
   description: "A blog mostly about software development"
   keywords: [Blog, Portfolio, Software]
   # author: Chris Wheeler
+  canonicalURL: "https://chriswheeler.dev/"
   # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto  # auto, dark, or light
@@ -47,10 +48,10 @@ params:
     # disableHLJS: true  # to disable highlight.js
     disableFingerprinting: true
     favicon: "/favicon.ico"
-    favicon16x16: "/favicon.ico"
-    favicon32x32: "/favicon.ico"
-    apple_touch_icon: "/favicon.png"  # poorly named variable used on desktop too
-    safari_pinned_tab: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/favicon.png"
+    safari_pinned_tab: "/favicon.svg"
 
   label:
     # what is shown in the top left corner of the site
