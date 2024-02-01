@@ -1,5 +1,5 @@
 +++
-title = 'Dont put all your eggs in one account'
+title = "Don't put all your eggs in one account"
 date = 2024-01-23T16:19:35-08:00
 tags = []
 +++
