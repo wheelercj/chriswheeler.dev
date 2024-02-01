@@ -30,7 +30,7 @@ params:
   ShowReadingTime: false
   ShowShareButtons: true
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowWordCount: false
   ShowRssButtonInSectionTermList: true
@@ -129,9 +129,12 @@ outputs:
 
 menu:
   main:
+    - name: RSS
+      url: /posts/index.xml
+      weight: 10
     - name: Search
       url: /search/
-      weight: 10
+      weight: 20
 #     - identifier: categories
 #       name: categories
 #       url: /categories/
