@@ -1,7 +1,7 @@
 +++
 title = 'Tech literacy'
 date = 2024-01-21T10:04:19-08:00
-lastmod = 2024-01-23T15:26:09-08:00
+lastmod = 2024-02-01T23:43:33-08:00
 tags = []
 +++
 
@@ -29,7 +29,7 @@ Choices related to security are usually a trade-off between convenience and secu
 
 ## email protection services
 
-Preventing spam is much easier when you avoid giving out your main email address by using email protection services like [DuckDuckGo's Email Protection](https://duckduckgo.com/email), [Proton's hide-my-email aliases](https://proton.me/pass/aliases), [1Password's Masked Email](https://1password.com/fastmail/), [Firefox Relay](https://relay.firefox.com/), or [iCloud+'s Hide My Email](https://support.apple.com/en-us/105078). If you start getting spam, you will know exactly where it's coming from and can immediately and completely stop the spam by disabling the compromised disposable email address.
+Preventing spam is much easier when you avoid giving out your main email address by using email protection services like [DuckDuckGo's Email Protection](https://duckduckgo.com/email), [Fastmail's Masked Email](https://www.fastmail.help/hc/en-us/articles/4406536368911-Masked-Email), [Proton's hide-my-email aliases](https://proton.me/pass/aliases), [Firefox Relay](https://relay.firefox.com/), or [iCloud+'s Hide My Email](https://support.apple.com/en-us/105078). If you start getting spam, you will know exactly where it's coming from and can immediately and completely stop the spam by disabling the compromised disposable email address.
 
 ## canaries
 
