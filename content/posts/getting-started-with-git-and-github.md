@@ -1,7 +1,7 @@
 +++
 title = 'Getting started with Git and GitHub'
 date = 2021-09-07T14:42:16-08:00
-lastmod = 2023-12-27T23:59:00-08:00
+lastmod = 2024-02-01T17:29:27-08:00
 tags = []
 +++
 
@@ -27,10 +27,11 @@ When you are working with others on a project and you're about to start work on 
 6. Make and accept a pull request on GitHub between the two branches.
 7. Delete the newer branch on GitHub (and optionally the local newer branch as well).
 
-## tips and tricks
+## further reading
 
 * for solo projects, [how to remove an accidentally pushed file from a git repo history](https://dev.to/moshe/remove-accidentally-pushed-file-from-a-git-repository-history-in-4-simple-steps-18cg) by Moshe Zada
 * [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/) by Seth Robertson
+* [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) by David Thompson.
 * version numbers
     * Semantic versioning is commonly used and is covered in [Versioning](https://datasift.github.io/gitflow/Versioning.html) (by datasift) and by [semver.org](https://semver.org/)
     * [CalVer](https://calver.org/) is another versioning convention based on the calendar
