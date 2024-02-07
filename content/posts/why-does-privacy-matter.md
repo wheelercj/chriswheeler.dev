@@ -7,7 +7,7 @@ tags = []
 
 Privacy is not about whether you have something to hide. It's about whether bad people can do bad things to you, because security is impossible without privacy.
 
-Think about it. If others can look over your shoulder any time, they can see all your passwords. If you couldn't hide the key to your home in a pocket or purse, others could copy the key. If the walls of your home were glass, anyone could see your home defenses, where you keep valuables, when you're sleeping or away, and how to disarm or unlock any alarm systems, safes, etc.
+If others can look over your shoulder any time, they can see all your passwords. If you couldn't hide the key to your home in a pocket or purse, others could copy the key. If the walls of your home were glass, anyone could see your home defenses, where you keep valuables, when you're sleeping or away, and how to disarm or unlock any alarm systems, safes, etc.
 
 These examples are obvious, but sometimes security vulnerabilities are not obvious. Almost all modern security breaches happen when something seems safe but isn't, and some things that maybe should be considered security breaches are often called good business. For example, [Cambridge Analytica](https://en.wikipedia.org/wiki/Cambridge_Analytica) was found to be gathering private data of millions of people to determine who is easy to manipulate and how to manipulate them to influence presidential elections. Although they were eventually caught and shut down, they were bought by [Emerdata Limited](https://en.wikipedia.org/wiki/Emerdata_Limited), another political consulting company.
 
