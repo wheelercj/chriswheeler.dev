@@ -17,7 +17,7 @@ Here are some great resources for learning how to use Git and GitHub. There's mo
 
 ## collaborating
 
-When you are working with others on a project and you're about to start work on a new feature or other change, follow these steps to prevent changes from being lost:
+When you are working with others on a project and you're about to start work on a new feature or other change, here's one of several ways to prevent changes from being lost:
 
 1. Use `git pull`.
 2. Create a new branch with a descriptive name and checkout the branch.
