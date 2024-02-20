@@ -29,6 +29,7 @@ When you are working with others on a project and you're about to start work on 
 
 ## further reading
 
+* you can create custom Git commands, such as [this one](https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298) for viewing commit history as a compact graph
 * for solo projects, [how to remove an accidentally pushed file from a git repo history](https://dev.to/moshe/remove-accidentally-pushed-file-from-a-git-repository-history-in-4-simple-steps-18cg) by Moshe Zada
 * [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/) by Seth Robertson
 * [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) by David Thompson.
