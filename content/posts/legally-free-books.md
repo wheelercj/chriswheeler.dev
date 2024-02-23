@@ -1,7 +1,7 @@
 +++
 title = 'Legally free books'
 date = 2021-04-10T22:11:27-08:00
-lastmod = 2024-01-29T23:28:58-08:00
+lastmod = 2024-02-23T15:21:22-08:00
 tags = []
 +++
 
@@ -17,6 +17,7 @@ This is a living page with links to free online books.
 * [Snaptoken's project guides](https://viewsourcecode.org/snaptoken/)
 * [Essential Programming Books by Krzysztof Kowalczyk](https://www.programming-books.io/), the creator of SumatraPDF
 * [_Game Programming Patterns_ by Robert Nystrom](https://gameprogrammingpatterns.com/)
+* [_Game AI Pro_ by Steve Rabin et al.](http://www.gameaipro.com/)
 * [_Computer Graphics from Scratch_ by Gabriel Gambetta](https://gabrielgambetta.com/computer-graphics-from-scratch/)
 * [_Complete Guide to Test Automation_ by Arnon Axelrod](https://link.springer.com/book/10.1007/978-1-4842-3832-5)
 * [_Handbook of Graph Drawing and Visualization_ by Roberto Tamassia et al.](https://cs.brown.edu/people/rtamassi/gdhandbook/)
