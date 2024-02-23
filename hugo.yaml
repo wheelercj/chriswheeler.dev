@@ -1,5 +1,5 @@
 baseURL: "https://chriswheeler.dev/"
-title: Chris' Notes
+title: Chris' Blog
 languageCode: en-us
 theme: PaperMod
 
@@ -18,7 +18,7 @@ minify:
 
 params:
   env: production  # to enable google analytics, opengraph, twitter-cards and schema
-  title: Chris' Notes
+  title: Chris' Blog
   description: "A blog mostly about software development"
   keywords: [Blog, Portfolio, Software]
   # author: Chris Wheeler
@@ -54,7 +54,7 @@ params:
 
   label:
     # what is shown in the top left corner of the site
-    text: "Chris' Notes"
+    text: "Chris' Blog"
     # icon: /favicon.png
     # iconHeight: 35
 
