@@ -1,7 +1,7 @@
 +++
 title = 'Getting started with Git and GitHub'
 date = 2021-09-07T14:42:16-08:00
-lastmod = 2024-02-25T00:20:27-08:00
+lastmod = 2024-02-25T01:07:32-08:00
 tags = []
 +++
 
@@ -9,7 +9,7 @@ Here are some great resources for learning how to use [Git](https://git-scm.com/
 
 1. Watch these short videos: [Version control with Git and GitHub](https://www.youtube.com/playlist?list=PLWKjhJtqVAbkFiqHnNaxpOPhh9tSWMXIF) by freeCodeCamp.
 2. Check out Better Explained's guides to [version control](https://betterexplained.com/articles/a-visual-guide-to-version-control/) and [Git](https://betterexplained.com/articles/aha-moments-when-learning-git/), or the [_Learn X in Y minutes_ guide to Git](https://learnxinyminutes.com/docs/git/).
-3. Consider starting with a Git client with a graphical interface, such as [GitHub Desktop](https://docs.github.com/en/desktop) or [Sublime Merge](https://www.sublimemerge.com/). They make the most commonly used features of Git easier to use without preventing you from learning more about Git.
+3. Consider starting with a Git client with a graphical interface, such as [GitHub Desktop](https://docs.github.com/en/desktop), [GitButler](https://gitbutler.com/), or [Sublime Merge](https://www.sublimemerge.com/). They make the most commonly used features of Git easier to use without preventing you from learning more about Git.
 4. Read some of this free online book, but only the parts that you will use very soon: [_Pro Git_](https://git-scm.com/book/en/v2) by Scott Chacon and Ben Straub.
 5. Bookmark [Dangit, Git!?!](https://dangitgit.com/en) for when you make mistakes with Git.
 6. [How to Write a Git Commit Message](https://cbea.ms/git-commit/) by cbeams.
