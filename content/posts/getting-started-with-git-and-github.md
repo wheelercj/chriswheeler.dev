@@ -1,7 +1,7 @@
 +++
 title = 'Getting started with Git and GitHub'
 date = 2021-09-07T14:42:16-08:00
-lastmod = 2024-02-23T13:02:01-08:00
+lastmod = 2024-02-25T00:20:27-08:00
 tags = []
 +++
 
@@ -33,6 +33,7 @@ Another example of a Git workflow with a different use-case is covered in [A suc
 ## further reading
 
 * you can create custom Git subcommands, such as [this one](https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298) for viewing commit history as a compact graph
+* [So You Think You Know Git](https://www.youtube.com/watch?v=aolI_Rz0ZqY) by Scott Chacon.
 * for solo projects, [how to remove an accidentally pushed file from a git repo history](https://dev.to/moshe/remove-accidentally-pushed-file-from-a-git-repository-history-in-4-simple-steps-18cg) by Moshe Zada
 * [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/) by Seth Robertson
 * [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) by David Thompson.
