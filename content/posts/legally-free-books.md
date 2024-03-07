@@ -72,6 +72,10 @@ Related: [Learning C or C++](https://til.chriswheeler.dev/intro-to-c-or-cpp/)
 
 Related: [Learning Python](https://til.chriswheeler.dev/intro-to-python/)
 
+**JavaScript**
+
+* [_Eloquent JavaScript_ by Marijn Haverbeke](https://eloquentjavascript.net/)
+
 **Go**
 
 * [_Learn Go With Tests_ by quii and Denise](https://quii.gitbook.io/learn-go-with-tests)
