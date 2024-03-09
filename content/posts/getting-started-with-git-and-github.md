@@ -33,7 +33,7 @@ Another example of a Git workflow with a different use-case is covered in [A suc
 ## further reading
 
 * you can create custom Git subcommands, such as [this one](https://stackoverflow.com/questions/1838873/visualizing-branch-topology-in-git/34467298#34467298) for viewing commit history as a compact graph
-* [So You Think You Know Git](https://www.youtube.com/watch?v=aolI_Rz0ZqY) by Scott Chacon.
+* [So You Think You Know Git](https://www.youtube.com/watch?v=aolI_Rz0ZqY) by Scott Chacon
 * for solo projects, [how to remove an accidentally pushed file from a git repo history](https://dev.to/moshe/remove-accidentally-pushed-file-from-a-git-repository-history-in-4-simple-steps-18cg) by Moshe Zada
 * [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/) by Seth Robertson
 * [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) by David Thompson.
@@ -44,6 +44,7 @@ Another example of a Git workflow with a different use-case is covered in [A suc
     * [Lets start tagging!](https://medium.com/@keshshen/lets-start-tagging-88c299b6b331) by Nageswaran introduces tagging with Git
     * [Proper use of Git tags](https://blog.aloni.org/posts/proper-use-of-git-tags/) by Dan Aloni briefly covers how to avoid some common mistakes and challenges
     * [Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) (part of _Pro Git_ by Scott Shacon and Ben Straub) goes into detail
+* [How HEAD works in git](https://jvns.ca/blog/2024/03/08/how-head-works-in-git/) by Julia Evans
 * [Creating a GPG key for signing Git commits](https://til.chriswheeler.dev/creating-a-gpg-key-for-signing-git-commits/)
 * [git-branchless: High-velocity, monorepo-scale workflow for Git](https://github.com/arxanas/git-branchless)
 
