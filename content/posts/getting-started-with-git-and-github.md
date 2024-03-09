@@ -45,6 +45,7 @@ Another example of a Git workflow with a different use-case is covered in [A suc
     * [Proper use of Git tags](https://blog.aloni.org/posts/proper-use-of-git-tags/) by Dan Aloni briefly covers how to avoid some common mistakes and challenges
     * [Git Basics - Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) (part of _Pro Git_ by Scott Shacon and Ben Straub) goes into detail
 * [Creating a GPG key for signing Git commits](https://til.chriswheeler.dev/creating-a-gpg-key-for-signing-git-commits/)
+* [git-branchless: High-velocity, monorepo-scale workflow for Git](https://github.com/arxanas/git-branchless)
 
 ## alternatives to GitHub
 
