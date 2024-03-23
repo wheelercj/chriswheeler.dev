@@ -37,6 +37,7 @@ Another example of a Git workflow with a different use-case is covered in [A suc
 * for solo projects, [how to remove an accidentally pushed file from a git repo history](https://dev.to/moshe/remove-accidentally-pushed-file-from-a-git-repository-history-in-4-simple-steps-18cg) by Moshe Zada
 * [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/) by Seth Robertson
 * [My favourite Git commit](https://dhwthompson.com/2019/my-favourite-git-commit) by David Thompson.
+* [Git Pathspecs and How to Use Them](https://css-tricks.com/git-pathspecs-and-how-to-use-them/) by Adam Giese.
 * version numbers
     * Semantic versioning is commonly used and is covered in [Versioning](https://datasift.github.io/gitflow/Versioning.html) (by datasift) and by [semver.org](https://semver.org/)
     * [CalVer](https://calver.org/) is another versioning convention based on the calendar
