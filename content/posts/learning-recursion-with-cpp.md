@@ -446,7 +446,7 @@ Now this is dynamic programming, and it can run significantly faster because eac
 * [Recursion — Wikipedia](https://en.wikipedia.org/wiki/Recursion_(computer_science))
 * [Dynamic Programming is not Black Magic](https://qsantos.fr/2024/01/04/dynamic-programming-is-not-black-magic/) by Quentin Santos
 * Leetcode has many questions for practice with [recursion](https://leetcode.com/problemset/algorithms/?page=1&topicSlugs=recursion) and [dynamic programming](https://leetcode.com/problemset/algorithms/?topicSlugs=dynamic-programming&page=1)
-* and of course, [Learning recursion with C++](/learning-recursion-with-cpp)
+* and of course, [Learning recursion with C++](/posts/learning-recursion-with-cpp)
 
 ## practice question sample solutions
 

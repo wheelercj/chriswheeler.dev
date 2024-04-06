@@ -65,4 +65,4 @@ Since I bought the `chriswheeler.dev` domain, I can create email addresses like 
 
 ## related
 
-* [Don't put all your eggs in one account](/dont-put-all-your-eggs-in-one-account)
+* [Don't put all your eggs in one account](/posts/dont-put-all-your-eggs-in-one-account)
