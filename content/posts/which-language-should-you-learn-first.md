@@ -1,7 +1,7 @@
 +++
 title = 'Which language should you learn first?'
 date = 2023-10-27T10:52:47-08:00
-lastmod = 2024-02-02T16:37:23-08:00
+lastmod = 2024-04-29T11:42:30-07:00
 tags = []
 +++
 
@@ -19,7 +19,7 @@ Don't spend too much time choosing your first programming language. It can be a 
     * **how to make games**, read [develop.games](https://www.develop.games/) and design a game first, then choose a game engine that works well for that design, then choose a programming language that is supported by that game engine.
     * **how to make desktop apps using web technologies**, check out the comparisons between several options (not just Go and Rust) in [Why Golang instead of Rust to develop the Krater desktop app](https://blog.moonguard.dev/why-golang-instead-of-rust-to-develop-the-krater-desktop-app) by Ronald Pereira.
     * **how to make desktop apps for Windows**, consider using C# with [.NET MAUI](https://dotnet.microsoft.com/en-us/apps/maui) and Visual Studio. I've tried a few different ways to make desktop apps with C++, C#, and Python, and this one was amazingly fast and easy, yet also had a high-quality result.
-    * **artificial intelligence, machine learning, etc.**, you will probably want to learn Python. Some other options are R and Julia, but there are very few job opportunities for R developers outside academia, and Julia doesn't seem to be getting much attention from the community for some reason.
+    * **artificial intelligence, machine learning, and/or data science**, you will probably want to learn Python or C++. Some other options are R and Julia, but there are very few job opportunities for R developers outside academia, and Julia doesn't seem to be getting much attention from the community for some reason.
 
 ## language comparisons
 
