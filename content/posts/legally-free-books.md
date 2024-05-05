@@ -12,6 +12,7 @@ This is a living page with links to free online books.
 * [_A Data-Centric Introduction to Computing_ by Fisler, Krishnamurthi, Lerner, and Politz](https://dcic-world.org/)
 * [_Programming Languages: Application and Interpretation_ by Shriram Krishnamurthi](https://news.ycombinator.com/item?id=31214018)
 * [_How to Design Programs_ by Felleisen, Findler, Flatt, Krishnamurthi](https://htdp.org/2022-2-9/Book/index.html)
+* [_The Nature of Code_ by Daniel Shiffman](https://natureofcode.com/)
 * [Linux Command Line Books by William Shotts](https://www.linuxcommand.org/tlcl.php) (_The Linux Command Line_ and _Adventures with the Linux Command Line_)
 * [Beej's Guides](https://beej.us/guide/) to network programming, Unix interprocess communication, and more
 * [Snaptoken's project guides](https://viewsourcecode.org/snaptoken/)
