@@ -1,7 +1,7 @@
 +++
 title = 'Legally free books'
 date = 2021-04-10T22:11:27-08:00
-lastmod = 2024-02-23T15:21:22-08:00
+lastmod = 2024-05-05T00:02:49-07:00
 tags = []
 +++
 
