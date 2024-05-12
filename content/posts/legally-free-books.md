@@ -1,11 +1,11 @@
 +++
 title = 'Legally free books'
 date = 2021-04-10T22:11:27-08:00
-lastmod = 2024-05-05T00:02:49-07:00
+lastmod = 2024-05-12T12:19:08-07:00
 tags = []
 +++
 
-This is a living page with links to free online books.
+Here are a bunch of free online books. I update this page with new books occasionally.
 
 ## computer science
 
@@ -89,6 +89,7 @@ Related: [Learning Go](https://til.chriswheeler.dev/intro-to-go/)
 
 ## math
 
+* [_Immersive Math_ by J. Ström, K. Åström, and T. Akenine-Möller](https://immersivemath.com/ila/index.html)
 * [_Probability, Statistics, and Data – A Fresh Approach Using R_ by Darrin Speegle and Bryan Clair](https://mathstat.slu.edu/~speegle/_book/preface.html)
 * [_generatingfunctionology_ by Herbert S. Wilf](https://www.math.upenn.edu/~wilf/DownldGF.html)
 * [_BOOK OF PROOF_ by Richard Hammack](https://www.people.vcu.edu/~rhammack/BookOfProof/)
