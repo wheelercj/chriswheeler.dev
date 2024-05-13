@@ -1,7 +1,7 @@
 +++
 title = 'Legally free books'
 date = 2021-04-10T22:11:27-08:00
-lastmod = 2024-05-12T12:19:08-07:00
+lastmod = 2024-05-13T15:25:06-07:00
 tags = []
 +++
 
@@ -13,6 +13,7 @@ Here are a bunch of free online books. I update this page with new books occasio
 * [_Programming Languages: Application and Interpretation_ by Shriram Krishnamurthi](https://news.ycombinator.com/item?id=31214018)
 * [_How to Design Programs_ by Felleisen, Findler, Flatt, Krishnamurthi](https://htdp.org/2022-2-9/Book/index.html)
 * [_The Nature of Code_ by Daniel Shiffman](https://natureofcode.com/)
+* [_Everything curl_ by Daniel Stenberg et al.](https://everything.curl.dev/index.html)
 * [Linux Command Line Books by William Shotts](https://www.linuxcommand.org/tlcl.php) (_The Linux Command Line_ and _Adventures with the Linux Command Line_)
 * [Beej's Guides](https://beej.us/guide/) to network programming, Unix interprocess communication, and more
 * [Snaptoken's project guides](https://viewsourcecode.org/snaptoken/)
