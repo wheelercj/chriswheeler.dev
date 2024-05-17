@@ -13,6 +13,7 @@ Here are some great resources for learning how to use [Git](https://git-scm.com/
 4. Read some of this free online book, but only the parts that you will use very soon: [_Pro Git_](https://git-scm.com/book/en/v2) by Scott Chacon and Ben Straub.
 5. Bookmark [Dangit, Git!?!](https://dangitgit.com/en) for when you make mistakes with Git.
 6. [How to Write a Git Commit Message](https://cbea.ms/git-commit/) by cbeams.
+7. [What are some examples of commonly used practices for naming git branches? - Stack Overflow](https://stackoverflow.com/questions/273695/what-are-some-examples-of-commonly-used-practices-for-naming-git-branches)
 
 ## Git workflows
 
