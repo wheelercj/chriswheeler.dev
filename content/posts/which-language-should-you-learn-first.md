@@ -20,6 +20,7 @@ Don't spend too much time choosing your first programming language. It can be a 
     * **how to make desktop apps using web technologies**, check out the comparisons between several options (not just Go and Rust) in [Why Golang instead of Rust to develop the Krater desktop app](https://blog.moonguard.dev/why-golang-instead-of-rust-to-develop-the-krater-desktop-app) by Ronald Pereira.
     * **how to make desktop apps for Windows**, consider using C# with [.NET MAUI](https://dotnet.microsoft.com/en-us/apps/maui) and Visual Studio. I've tried a few different ways to make desktop apps with C++, C#, and Python, and this one was amazingly fast and easy, yet also had a high-quality result.
     * **artificial intelligence, machine learning, and/or data science**, you will probably want to learn Python or C++. Some other options are R and Julia, but there are very few job opportunities for R developers outside academia, and Julia doesn't seem to be getting much attention from the community for some reason.
+    * **cybersecurity**, check out [OverTheWire: Wargames](https://overthewire.org/wargames/).
 
 ## language comparisons
 
@@ -36,6 +37,8 @@ Don't spend too much time choosing your first programming language. It can be a 
 
 ## further reading
 
+* [Learning Python](https://til.chriswheeler.dev/intro-to-python/)
+* [Learning C or C++](https://til.chriswheeler.dev/intro-to-c-or-cpp/)
 * [Computer Science roadmap](https://roadmap.sh/computer-science) — Curriculum for the self-taught developer
 * [Backend roadmap](https://roadmap.sh/backend) — Step by step guide to becoming a modern backend developer
 * [stackshare.io/stacks](https://stackshare.io/stacks) — The open source tools and SaaS behind popular tech companies
