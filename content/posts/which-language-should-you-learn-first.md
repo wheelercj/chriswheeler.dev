@@ -1,7 +1,7 @@
 +++
 title = 'Which language should you learn first?'
 date = 2023-10-27T10:52:47-08:00
-lastmod = 2024-04-29T11:42:30-07:00
+lastmod = 2024-07-01T01:01:32-07:00
 tags = []
 +++
 
@@ -13,7 +13,7 @@ Don't spend too much time choosing your first programming language. It can be a 
     * Look at job postings that interest you to see what they require.
     * If you want to get a software development job _as fast as possible_, consider learning JavaScript. JavaScript is one of the easier languages to learn and there are many entry-level job opportunities that require practice with it.
 * If you're determined to become a software developer, learn whatever language interests you most. It doesn't really matter which one you pick because it's normal and good for software developers to be familiar with many languages. If you can't choose, start with C because it's a widely used language that will let you focus on the fundamentals.
-* If you're not very interested in programming but just want something to help with data processing, and tools like ChatGPT, [Wolfram Alpha](https://www.wolframalpha.com/), [CyberChef](https://gchq.github.io/CyberChef/), [ffmpeg](https://en.wikipedia.org/wiki/FFmpeg), and [Pandoc](https://pandoc.org/) don't meet your needs, then you will probably want to choose either Python, PowerShell, or [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) depending on your exact needs.
+* If you're not very interested in programming but just want something to help with data processing, and tools like [Wolfram Alpha](https://www.wolframalpha.com/), [CyberChef](https://gchq.github.io/CyberChef/), [ffmpeg](https://en.wikipedia.org/wiki/FFmpeg), [ImageMagick](https://imagemagick.org/), and [Pandoc](https://pandoc.org/) don't meet your needs, then you will probably want to choose either Python, PowerShell, or [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) depending on your exact needs.
 * If you want to learn...
     * **how to make websites**, learn JavaScript (and HTML/CSS). While it is possible to build websites without any JavaScript, most websites use at least a little bit of it and many websites use a ton.
     * **how to make games**, read [develop.games](https://www.develop.games/) and design a game first, then choose a game engine that works well for that design, then choose a programming language that is supported by that game engine.
