@@ -44,5 +44,5 @@ Don't spend too much time choosing your first programming language. It can be a 
 * [stackshare.io/stacks](https://stackshare.io/stacks) — The open source tools and SaaS behind popular tech companies
 * [builtwith.com](https://builtwith.com/)  — Find out what websites are Built With
 * [teamblind.com job postings that include the tech the job uses](https://www.teamblind.com/jobs)
-* [Impressive programming languages](https://til.chriswheeler.dev/impressive-programming-languages/)
+* [Impressive programming languages](/posts/impressive-programming-languages/)
 * [legally free books](/posts/legally-free-books/)

@@ -12,4 +12,4 @@ I use Stardown many times a day almost every day. I mostly use it to copy a link
 
 Stardown is designed for all markdown editors and available for almost all major browsers. It's [open source](https://github.com/wheelercj/Stardown), easier to use than all similar extensions, and more likely to be up-to-date because of how simple it is and the fact that I use it all the time. I hope it will be helpful to you too.
 
-P.S. — I published some notes on [making browser extensions](https://til.chriswheeler.dev/making-browser-extensions/).
+P.S. — I published some notes on [making browser extensions](/posts/making-browser-extensions/).

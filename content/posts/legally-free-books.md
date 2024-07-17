@@ -48,7 +48,7 @@ Here are a bunch of free online books. I update this page with new books occasio
 * [_Algorithms_ by Jeff Erickson](https://jeffe.cs.illinois.edu/teaching/algorithms/?)
 * [OpenDSA](https://opendsa-server.cs.vt.edu/home/books) (collection of books)
 
-Related: [Algorithms](https://til.chriswheeler.dev/algorithms/)
+Related: [Algorithms](/posts/algorithms/)
 
 **C/C++**
 
@@ -82,7 +82,7 @@ Related: [Learning Python](https://til.chriswheeler.dev/intro-to-python/)
 
 * [_Learn Go With Tests_ by quii and Denise](https://quii.gitbook.io/learn-go-with-tests)
 
-Related: [Learning Go](https://til.chriswheeler.dev/intro-to-go/)
+Related: [Learning Go](/posts/intro-to-go/)
 
 **Clojure**
 
