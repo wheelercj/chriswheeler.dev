@@ -86,10 +86,10 @@ params:
   socialIcons:
     - name: github
       url: "https://github.com/wheelercj"
-    - name: tils
-      url: "https://til.chriswheeler.dev/"
     - name: email
       url: "mailto:mail@chriswheeler.dev"
+    - name: tils
+      url: "https://til.chriswheeler.dev/"
     # - name: resume
     #   url: "/resume.html"
 
