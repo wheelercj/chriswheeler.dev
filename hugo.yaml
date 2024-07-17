@@ -3,7 +3,7 @@ title: Chris' Blog
 languageCode: en-us
 theme: PaperMod
 
-paginate: 5
+paginate: 10
 
 enableRobotsTXT: true
 buildDrafts: false
