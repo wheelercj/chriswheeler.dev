@@ -10,7 +10,7 @@ tags = []
 
 ## More examples
 
-- Here's one I made. You can drag it into your bookmarks bar: <a href="javascript: navigator.clipboard.writeText('[' + document.title + '](' + location.href + ')');">copy markdown link</a>. It puts into the clipboard a markdown link for the current page using the tab's title as the link title.
+- Here's one I made. You can drag it into your bookmarks bar: {{< safeHtml >}}<a href="javascript: navigator.clipboard.writeText('[' + document.title + '](' + location.href + ')');">copy markdown link</a>{{< /safeHtml >}}. It puts into the clipboard a markdown link for the current page using the tab's title as the link title.
 - [web-automation/bookmarklets](https://github.com/madacol/web-automation/tree/master/bookmarklets), by Marco D'Agostini, is a collection of bookmarklets
 - [Obsidian Web Clipper Bookmarklet](https://gist.github.com/kepano/90c05f162c37cf730abb8ff027987ca3), by Steph Ango, converts websites to markdown and saves them directly to Obsidian
 - [Jesse's Bookmarklets Site](https://www.squarefree.com/bookmarklets/) (last updated in 2004)
