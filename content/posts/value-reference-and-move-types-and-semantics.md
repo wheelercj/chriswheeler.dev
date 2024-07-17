@@ -41,6 +41,6 @@ I never heard the phrases "value types" and "reference types" until I started le
 
 ## further reading
 
-* [Pointers vs. references](/pointers-vs-references)
+* [Pointers vs. references](/posts/pointers-vs-references)
 * [C++ Move Semantics Considered Harmful (Rust is better)](https://www.thecodedmessage.com/posts/cpp-move/) by Jimmy Hartzell
 * [C++'s std::move function](https://en.cppreference.com/w/cpp/utility/move)

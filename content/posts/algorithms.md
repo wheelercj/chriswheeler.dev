@@ -45,6 +45,6 @@ The questions on these sites tend to be very challenging. Definitely learn what 
 ## related
 
 * [Zed Decoded: Rope & SumTree](https://zed.dev/blog/zed-decoded-rope-sumtree)
-* [Legally free books](/legally-free-books/)
-* [Learning recursion with C++](/learning-recursion-with-cpp/)
+* [Legally free books](/posts/legally-free-books/)
+* [Learning recursion with C++](/posts/learning-recursion-with-cpp/)
 * [minimal doubly linked list](https://til.chriswheeler.dev/minimal-doubly-linked-list/)

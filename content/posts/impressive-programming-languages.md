@@ -37,4 +37,4 @@ I don't know Rust and I'm not sure if I will learn it, but from what I've heard,
 
 ## see also
 
-* [Which language should you learn first?](/which-language-should-you-learn-first)
+* [Which language should you learn first?](/posts/which-language-should-you-learn-first)

@@ -7,7 +7,7 @@ tags = []
 
 Here are various resources that are good to know about while learning the Go programming language.
 
-I created a list of commonly used Go packages and other dev tools at [Go dev tools](/go-dev-tools).
+I created a list of commonly used Go packages and other dev tools at [Go dev tools](/posts/go-dev-tools).
 
 ## getting started
 
@@ -32,7 +32,7 @@ I created a list of commonly used Go packages and other dev tools at [Go dev too
 
 ### miscellaneous
 
-* [Pointers vs. references](/pointers-vs-references)
+* [Pointers vs. references](/posts/pointers-vs-references)
 * [Go Databases](https://blog.teamortix.com/posts/2021/08/go-databases/) by Hamza Ali - comparisons of various Go database libraries and why to not use an ORM
 * [Logging in Go with Slog: The Ultimate Guide](https://betterstack.com/community/guides/logging/logging-in-go/) by Better Stack Community
 * [Don't defer Close() on writable files](https://www.joeshaw.org/dont-defer-close-on-writable-files/) by Joe Shaw
@@ -56,7 +56,7 @@ I created a list of commonly used Go packages and other dev tools at [Go dev too
 * [Go docker images: small and simple](https://laurentsv.com/blog/2024/06/25/stop-the-go-and-docker-madness.html) by Laurent Demailly
 * [GoogleContainerTools/distroless](https://github.com/GoogleContainerTools/distroless) - language focused docker images, minus the operating system
 * [this discussion](https://github.com/golang/go/issues/26492) covers what build flags to try when you want to create a statically-linked binary
-* [Publishing Go packages](/publishing-go-packages)
+* [Publishing Go packages](/posts/publishing-go-packages)
 * [Gokrazy](https://news.ycombinator.com/item?id=37583234) - deploy Go programs as appliances to a Raspberry Pi or PC
 
 ### contexts
