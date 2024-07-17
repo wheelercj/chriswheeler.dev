@@ -90,8 +90,8 @@ params:
       url: "https://til.chriswheeler.dev/"
     - name: email
       url: "mailto:mail@chriswheeler.dev"
-    - name: resume
-      url: "/resume.html"
+    # - name: resume
+    #   url: "/resume.html"
 
   # analytics:
   #   google:
