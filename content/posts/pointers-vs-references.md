@@ -13,7 +13,7 @@ References can refer to memory with data of the reference's type. References in 
 
 To make things more complicated, some definitions of "references" disagree on whether references need to be able to be "returned by reference" (see description below) even when reassigned. This is especially confusing in Go. One of the language's project members, Dave Cheney, explains that [There is no pass-by-reference in Go](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go), yet the official Go FAQ says [maps, slices, and channels are references](https://go.dev/doc/faq#references). (I ran Cheney's sample code with Go 1.22.5 and it gave the same output.) Whether Go has references depends on the debatable definition of "references", but in my experience, most people say Go has references.
 
-Related: [Value, reference, and move types and semantics](https://til.chriswheeler.dev/value-reference-and-move-types-and-semantics/)
+Related: [Value, reference, and move types and semantics](/value-reference-and-move-types-and-semantics/)
 
 ## Returned by reference
 
