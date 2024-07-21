@@ -1,17 +1,21 @@
 +++
 title = 'Pointers vs. references'
 date = 2024-07-03T14:17:41-07:00
-lastmod = 2024-07-16T20:29:01-07:00
+lastmod = 2024-07-21T00:37:18-07:00
 tags = []
 +++
 
-Some differences between pointers and references can be confusing, especially since different programming languages define references in different ways.
+Some differences between pointers and references can be confusing, especially since there are several different definitions for those words. This can make it difficult to answer simple questions like "Does Golang have reference types?" (TLDR: most people and [the official Go FAQ](https://go.dev/doc/faq#references) say that Go does have reference types.)
 
-Pointers can point anywhere in memory. They can point to null, or to memory with data of the pointer's type, or anywhere else. Besides various pointer safety features some languages have, there are no restrictions on where pointers can point.
+## Pointers
 
-References can refer to memory with data of the reference's type. References in some languages, like C++, allow this and nothing else. However, most languages also allow references to refer to null. In any case, references cannot refer to memory that is neither null nor of the reference's type.
+In some languages like C++, pointers can point anywhere in memory. They can point to null, or to memory with data of the pointer's type, or any other part of memory. In other languages including Go, the same is true except that they cannot point just anywhere; they can point to null/nil or to memory with data of the pointer's type, but not anywhere else.
 
-To make things more complicated, some definitions of "references" disagree on whether references need to be able to be "returned by reference" (see description below) even when reassigned. This is especially confusing in Go. One of the language's project members, Dave Cheney, explains that [There is no pass-by-reference in Go](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go), yet the official Go FAQ says [maps, slices, and channels are references](https://go.dev/doc/faq#references). (I ran Cheney's sample code with Go 1.22.5 and it gave the same output.) Whether Go has references depends on the debatable definition of "references", but in my experience, most people say Go has references.
+## References
+
+C++'s references are similar to Go's pointers in that they can refer to memory with data of the reference's type, but not other parts of memory. However, C++'s references cannot refer to null unlike most languages with references. As far as I know, no programming language allows references to refer to parts of memory that do not have data of the reference's type (besides null/nil).
+
+Some definitions of "references" disagree on whether references need to be able to be "returned by reference" (see description below) even when reassigned. References in most languages do allow returning reassignment by reference, but Go's references do not. One of the Go language's project members, Dave Cheney, uses that fact to claim [There is no pass-by-reference in Go](https://dave.cheney.net/2017/04/29/there-is-no-pass-by-reference-in-go), but the official Go FAQ says [maps, slices, and channels are references](https://go.dev/doc/faq#references). (I ran Cheney's sample code with Go 1.22.5 and it gave the same output as in his post.) Whether Go has references depends on the debatable definition of "references", but in my experience, most people say Go has references.
 
 Related: [Value, reference, and move types and semantics](/posts/value-reference-and-move-types-and-semantics)
 
