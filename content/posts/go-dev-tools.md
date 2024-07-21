@@ -1,7 +1,7 @@
 +++
 title = 'Go dev tools'
 date = 2024-07-02T01:14:26-07:00
-lastmod = 2024-07-11T16:00:16-07:00
+lastmod = 2024-07-21T11:55:11-07:00
 tags = []
 ShowToc = true
 TocOpen = true
@@ -125,7 +125,7 @@ A MySQL driver for Go's `database/sql` package.
 
 `go install github.com/sqlc-dev/sqlc/cmd/sqlc@latest`
 
-Generate type-safe code from SQL. Use of ORMs is strongly discouraged by almost all Go developers.
+Generate type-safe code from SQL. This tool writes most of the database-related code you would have written anyways. One of many reasons sqlc is popular is because the use of ORMs in Go is strongly discouraged by almost all Go developers.
 
 **[goose](https://github.com/pressly/goose)**
 
