@@ -41,7 +41,7 @@ See [web-ext command reference](https://extensionworkshop.com/documentation/deve
 
 Besides the example extensions in [the Chrome dev docs](https://developer.chrome.com/docs/extensions), here are a few more:
 
-* [Stardown](https://github.com/wheelercj/Stardown) (which I created)
+* [Stardown](https://github.com/Stardown-app/Stardown) (which I created)
 * [uBlock Origin](https://github.com/gorhill/uBlock)
 * [Dark Reader](https://github.com/darkreader/darkreader)
 * [Zotero](https://til.chriswheeler.dev/how-zotero-gets-reference-data-from-sites/)
