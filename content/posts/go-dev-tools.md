@@ -1,7 +1,7 @@
 +++
 title = 'Go dev tools'
 date = 2024-07-02T01:14:26-07:00
-lastmod = 2024-07-21T11:55:11-07:00
+lastmod = 2024-07-28T11:46:00-07:00
 tags = []
 ShowToc = true
 TocOpen = true
@@ -77,7 +77,11 @@ A tool for instantiating new projects in Go from predefined templates.
 
 Live reload for Go apps. I'm not interested in this, but I often see people new to Go ask if something like this exists.
 
-## Code and dependency analysis
+## Profiling and analysis
+
+**[pprof](https://jvns.ca/blog/2017/09/24/profiling-go-with-pprof/)**
+
+Package pprof writes runtime profiling data in the format expected by the pprof visualization tool.
 
 **[govulncheck](https://go.dev/blog/govulncheck)**
 
