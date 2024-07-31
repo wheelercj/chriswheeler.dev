@@ -75,10 +75,10 @@ params:
   homeInfoParams:
     Title: "Hello"
     Content: |
-      I'm Chris Wheeler, a freelance software developer focusing mostly on web
-      development. I've always wanted to be some kind of inventor; someone that makes
-      things that are useful and make people happy. Now I'm finally able to do that by
-      creating software and sharing what I've learned.  
+      I'm Chris Wheeler, a freelance software developer focusing mostly on backend web
+      development and developer tools. I've always wanted to be some kind of inventor;
+      someone that makes things that are useful and make people happy. Now I'm finally
+      able to do that by creating software and sharing what I've learned.
 
   socialIcons:
     - name: github
