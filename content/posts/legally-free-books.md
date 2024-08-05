@@ -1,7 +1,7 @@
 +++
 title = 'Legally free books'
 date = 2021-04-10T22:11:27-08:00
-lastmod = 2024-05-13T15:25:06-07:00
+lastmod = 2024-08-04T19:17:19-07:00
 tags = []
 +++
 
@@ -9,6 +9,7 @@ Here are a bunch of free online books. I update this page with new books occasio
 
 ## computer science
 
+* [_Software Engineering at Google_ by Titus Winters, Tom Manshreck, and Hyrum Wright](https://abseil.io/resources/swe-book)
 * [_A Data-Centric Introduction to Computing_ by Fisler, Krishnamurthi, Lerner, and Politz](https://dcic-world.org/)
 * [_Programming Languages: Application and Interpretation_ by Shriram Krishnamurthi](https://news.ycombinator.com/item?id=31214018)
 * [_How to Design Programs_ by Felleisen, Findler, Flatt, Krishnamurthi](https://htdp.org/2022-2-9/Book/index.html)
