@@ -31,6 +31,12 @@ A log rolling package for Go. This can be used as the backend behind the Go stan
 
 gorilla/websocket is a fast, well-tested and widely used WebSocket implementation for Go. It passes the server tests in the [Autobahn Test Suite](https://github.com/crossbario/autobahn-testsuite).
 
+**[coder/websocket](https://github.com/coder/websocket)**
+
+`import "github.com/coder/websocket"`
+
+This WebSocket implementation is similar to Gorilla's, but has [different pros and cons](https://github.com/coder/websocket?tab=readme-ov-file#comparison).
+
 **[markbates/goth](https://github.com/markbates/goth?tab=readme-ov-file)**
 
 `import "github.com/markbates/goth"`
