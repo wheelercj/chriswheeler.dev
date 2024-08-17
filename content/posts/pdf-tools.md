@@ -5,7 +5,7 @@ lastmod = 2024-05-14T22:56:25-07:00
 tags = []
 +++
 
-Here are a bunch of tools I found for reading, editing, and more with PDFs. Of these, I have so far used Sumatra PDF, Zotero, Pandoc, Xodo (their downloadable version), and OCRmyPDF, but the others look promising.
+Here are a bunch of tools I found for reading, editing, and more with PDFs. I have not tried all of these but they all look promising.
 
 * [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader) is the best PDF reader for Windows.
 * [Zotero](https://www.zotero.org/) includes a PDF reader that lets you add annotations to PDFs, and makes it easy to save PDFs and info about them from websites.
@@ -16,6 +16,7 @@ Here are a bunch of tools I found for reading, editing, and more with PDFs. Of t
 * [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools for manipulating images, including PDFs by using Ghostscript.
 * [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) performs optical character recognition (OCR) to add a text layer to PDFs, making them searchable, among other benefits.
 * [Marker](https://github.com/vikparuchuri/marker) converts PDF to markdown, optionally using OCRmyPDF.
+* [MinerU](https://github.com/opendatalab/MinerU) converts PDF to markdown or JSON, optionally using [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR).
 * [pydigitize](https://news.ycombinator.com/item?id=30615279) uses OCRmyPDF and other tools to convert paper documents to PDFs ready for archival.
 * [Diff-pdf](https://news.ycombinator.com/item?id=40854319) is for visualizing the differences between two PDFs.
 * [PDF-Diff](https://news.ycombinator.com/item?id=32353479) is another tool for visualizing the differences between two PDFs.
@@ -27,3 +28,9 @@ Here are a bunch of tools I found for reading, editing, and more with PDFs. Of t
 * [PrintFriendly](https://www.printfriendly.com/) converts many file formats to PDF for better printing.
 * [PrintWhatYouLike.com](https://www.printwhatyoulike.com/) lets you print the good parts of any web page while skipping ads and other junk.
 * [this HN discussion](https://news.ycombinator.com/item?id=39027543) covers several tools that can be used to generate PDFs using HTML and CSS.
+
+## Security
+
+* [VirusTotal](https://www.virustotal.com/gui/home/upload) can analyze files, websites, and more for security threats. This online service makes submissions public.
+* [zbetcheckin's PDF analysis](https://github.com/zbetcheckin/PDF_analysis?tab=readme-ov-file) is a collection of tools for analyzing PDFs for security threats.
+* [Canarytokens.org](https://canarytokens.org/nest/) can create PDFs and many other things that notify you when they're opened to help you detect security breaches.
