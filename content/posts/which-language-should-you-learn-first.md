@@ -1,7 +1,7 @@
 +++
 title = 'Which language should you learn first?'
 date = 2023-10-27T10:52:47-08:00
-lastmod = 2024-07-01T01:01:32-07:00
+lastmod = 2024-08-20T11:32:41-07:00
 tags = []
 +++
 
@@ -31,6 +31,7 @@ Don't spend too much time choosing your first programming language. It can be a 
 * [GitHub's rankings of the most popular programming languages](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/#the-most-popular-programming-languages)
 * [Hired’s rankings of the hottest software engineering skills](https://pages.hired.email/rs/289-SIY-439/images/Hired_2023%20State%20of%20Software%20Engineers.pdf#page=32)
 * [Rust vs Go: Better Together](https://spf13.com/p/rust-vs-go-better-together/)
+* [Ranking Programming Languages by Energy Efficiency](https://haslab.github.io/SAFER/scp21.pdf) by Pereira et al.
 * [Some mistakes Rust doesn't catch](https://news.ycombinator.com/item?id=30253426) by [Amos](https://fasterthanli.me/about) gives a very detailed and well-written comparison of Rust, Go, and JavaScript
 * [Building a Cloud Database from Scratch: Why We Moved from C++ to Rust](https://risingwave.com/blog/building-a-cloud-database-from-scratch-why-we-moved-from-c-to-rust/) (5/24/2022) by Yingjun Wu, CEO of RisingWave Labs, compares Rust and C++ and explains why they switched to Rust after 7 months of writing C++
 * [Learn X in Y minutes](https://learnxinyminutes.com/) — Take a whirlwind tour of your next favorite language
