@@ -1,7 +1,7 @@
 +++
 title = 'PDF tools'
 date = 2024-05-09T12:22:27-07:00
-lastmod = 2024-05-14T22:56:25-07:00
+lastmod = 2024-08-28T22:56:22-07:00
 tags = []
 +++
 
@@ -28,6 +28,7 @@ Here are a bunch of tools I found for reading, editing, and more with PDFs. I ha
 * [PrintFriendly](https://www.printfriendly.com/) converts many file formats to PDF for better printing.
 * [PrintWhatYouLike.com](https://www.printwhatyoulike.com/) lets you print the good parts of any web page while skipping ads and other junk.
 * [this HN discussion](https://news.ycombinator.com/item?id=39027543) covers several tools that can be used to generate PDFs using HTML and CSS.
+* [here's an HN discussion](https://news.ycombinator.com/item?id=41377960) that lists various tools for analyzing PDFs, such as to look for malicious code.
 
 ## Security
 
