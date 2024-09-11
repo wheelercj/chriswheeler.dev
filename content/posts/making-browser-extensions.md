@@ -1,7 +1,7 @@
 +++
 title = 'Making browser extensions'
 date = 2024-05-05T00:03:55-07:00
-lastmod = 2024-06-30T18:08:37-07:00
+lastmod = 2024-09-11T16:32:39-07:00
 tags = []
 +++
 
@@ -10,6 +10,8 @@ Creating browser extensions is easier than I expected, but still has some challe
 Creating your first extension requires a lot of trial and error. It gets easier as you learn how extensions work and how to use the browser APIs. On sites like Stack Overflow, many discussions have answers that make assumptions, such as that you're creating a content script and so have access to the `document` variable (which is not accessible in background scripts). The assumptions in some answers are confusing at first, but this problem also gradually fades as you learn more.
 
 [Browser extensions are underrated: the promise of hackable software (2019)](https://news.ycombinator.com/item?id=39251095) is a Hacker News discussion that covers the pros and cons of browser extensions, and similar tools such as bookmarklets and user scripts.
+
+Unless you already have a very specific idea of what you want to create, I recommend reading the descriptions of [the WebExtensions JavaScript APIs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API) so you know what extensions are capable of.
 
 ## browsers
 
@@ -44,6 +46,7 @@ Besides the example extensions in [the Chrome dev docs](https://developer.chrome
 * [Stardown](https://github.com/Stardown-app/Stardown) (which I created)
 * [uBlock Origin](https://github.com/gorhill/uBlock)
 * [Dark Reader](https://github.com/darkreader/darkreader)
+* [Consent-O-Matic](https://github.com/cavi-au/Consent-O-Matic)
 * [Zotero](https://til.chriswheeler.dev/how-zotero-gets-reference-data-from-sites/)
 * [search for more on GitHub](https://github.com/topics/browser-extension).
 
