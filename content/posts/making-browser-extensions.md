@@ -1,7 +1,7 @@
 +++
 title = 'Making browser extensions'
 date = 2024-05-05T00:03:55-07:00
-lastmod = 2024-09-11T16:32:39-07:00
+lastmod = 2024-09-14T00:25:53-07:00
 tags = []
 +++
 
@@ -41,14 +41,13 @@ See [web-ext command reference](https://extensionworkshop.com/documentation/deve
 
 ## examples
 
-Besides the example extensions in [the Chrome dev docs](https://developer.chrome.com/docs/extensions), here are a few more:
-
+* [Chrome's sample extensions](https://developer.chrome.com/docs/extensions/samples)
 * [Stardown](https://github.com/Stardown-app/Stardown) (which I created)
 * [uBlock Origin](https://github.com/gorhill/uBlock)
 * [Dark Reader](https://github.com/darkreader/darkreader)
 * [Consent-O-Matic](https://github.com/cavi-au/Consent-O-Matic)
 * [Zotero](https://til.chriswheeler.dev/how-zotero-gets-reference-data-from-sites/)
-* [search for more on GitHub](https://github.com/topics/browser-extension).
+* [search for more on GitHub](https://github.com/topics/browser-extension)
 
 Also, reading the reviews of related extensions can be very helpful when deciding what features to create in your extension.
 
