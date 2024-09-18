@@ -1,7 +1,7 @@
 +++
 title = 'Making browser extensions'
 date = 2024-05-05T00:03:55-07:00
-lastmod = 2024-09-14T00:25:53-07:00
+lastmod = 2024-09-18T12:30:05-07:00
 tags = []
 +++
 
@@ -77,6 +77,7 @@ Here are a bunch of links to documentation, guides, etc. that I found helpful.
 	* [dev docs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
 	* [developer hub](https://addons.mozilla.org/en-US/developers/addons)
 	* [Extension Workshop](https://extensionworkshop.com/)
+	* [JavaScript APIs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API)
 	* [manifest.json](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json)
 	* [Request the right permissions](https://extensionworkshop.com/documentation/develop/request-the-right-permissions/)
 	* [Porting a Google Chrome extension](https://extensionworkshop.com/documentation/develop/porting-a-google-chrome-extension/)
