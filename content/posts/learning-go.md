@@ -1,7 +1,7 @@
 +++
 title = 'Learning Go'
 date = 2022-11-22T17:39:10-08:00
-lastmod = 2024-07-11T01:01:50-07:00
+lastmod = 2024-09-29T15:38:12-07:00
 tags = []
 +++
 
@@ -35,6 +35,7 @@ I created a list of commonly used Go packages and other dev tools at [Go dev too
 * [Pointers vs. references](/posts/pointers-vs-references)
 * [Go Databases](https://blog.teamortix.com/posts/2021/08/go-databases/) by Hamza Ali - comparisons of various Go database libraries and why to not use an ORM
 * [Logging in Go with Slog: The Ultimate Guide](https://betterstack.com/community/guides/logging/logging-in-go/) by Better Stack Community
+* [CPU Throttling for containerized Go applications explained](https://kanishk.io/posts/cpu-throttling-in-containerized-go-apps/) by Kanishk Singh
 * [Don't defer Close() on writable files](https://www.joeshaw.org/dont-defer-close-on-writable-files/) by Joe Shaw
 * [My favorite build options for Go](https://opensource.com/article/22/4/go-build-options), by Gaurav Kamathe, covers commands that show how Go creates binaries, what intermediate assembly it uses, and how to make Go binaries smaller.
 * [Interface Upgrades in Go](https://avtok.com/2014/11/05/interface-upgrades.html) by Avtok
