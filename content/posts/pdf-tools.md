@@ -1,7 +1,7 @@
 +++
 title = 'PDF tools'
 date = 2024-05-09T12:22:27-07:00
-lastmod = 2024-10-29T16:08:35-07:00
+lastmod = 2024-11-18T13:07:45-08:00
 tags = []
 +++
 
@@ -13,6 +13,7 @@ Here are a bunch of tools I found for reading, editing, and more with PDFs. I ha
 * [Pandoc](https://pandoc.org/) converts files between many formats.
 * [Ghostscript](https://ghostscript.com/index.html) is an interpreter for the PostScript® language and PDF files.
 * [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools for manipulating images, including PDFs by using Ghostscript.
+* [DocuSeal](https://github.com/docusealco/docuseal) is an open source DocuSign alternative for creating, filling, and signing documents.
 * [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) performs optical character recognition (OCR) to add a text layer to PDFs, making them searchable, among other benefits.
 * [Marker](https://github.com/vikparuchuri/marker) converts PDF to markdown, optionally using OCRmyPDF.
 * [MinerU](https://github.com/opendatalab/MinerU) converts PDF to markdown or JSON, optionally using [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR).
