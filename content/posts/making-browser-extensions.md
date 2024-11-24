@@ -1,7 +1,7 @@
 +++
 title = 'Making browser extensions'
 date = 2024-05-05T00:03:55-07:00
-lastmod = 2024-09-18T12:30:05-07:00
+lastmod = 2024-11-23T16:19:16-08:00
 tags = []
 +++
 
@@ -96,3 +96,7 @@ Some email clients are almost the same as browsers and also have extentions, suc
 * [Add-ons for Thunderbird](https://addons.thunderbird.net/en-US/thunderbird/)
 * [developer.thunderbird.net](https://developer.thunderbird.net/)
 * [github.com/thunderbird/sample-extensions](https://github.com/thunderbird/sample-extensions)
+
+## further reading
+
+* [Ask HN: To those with successful browser extension(s), how did you grow it? \| Hacker News](https://news.ycombinator.com/item?id=42217504)
