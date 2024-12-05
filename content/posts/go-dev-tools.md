@@ -1,7 +1,7 @@
 +++
 title = 'Go dev tools'
 date = 2024-07-02T01:14:26-07:00
-lastmod = 2024-07-28T11:46:00-07:00
+lastmod = 2024-12-05T09:46:06-08:00
 tags = []
 ShowToc = true
 TocOpen = true
@@ -147,7 +147,7 @@ A database migration tool that supports SQL migrations and Go functions.
 
 In Go, it's common to build web servers without using a framework because Go has several excellent routers.
 
-The Go standard library's [net/http](https://pkg.go.dev/net/http) package has only the most basic features but is said to have the best performance.
+The Go standard library's [net/http](https://pkg.go.dev/net/http) package has only the most basic features but excellent performance.
 
 Among third-party routers, [chi](https://github.com/go-chi/chi) and [gorilla/mux](https://github.com/gorilla/mux) are probably the most widely used. They are very similar. It appears gorilla/mux was more popular than chi in the past, but chi started catching up when gorilla/mux temporarily went unmaintained for a while. In online discussions, I almost always see people prefer chi over gorilla/mux. chi was implemented with a trie and gorilla/mux was implemented with regex.
 
