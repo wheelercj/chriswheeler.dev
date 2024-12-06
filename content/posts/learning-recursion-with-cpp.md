@@ -1,7 +1,7 @@
 +++
 title = 'Learning recursion with C++'
 date = 2022-05-02T23:23:49-08:00
-lastmod = 2024-01-14T12:41:00-08:00
+lastmod = 2024-12-06T00:37:56-08:00
 tags = []
 +++
 
@@ -294,11 +294,11 @@ Below is an example of how to do that.
 using namespace std;
 
 struct Node {
-	int value = 0;
-	Node* next = NULL;
-	Node(int new_value) {
-		value = new_value;
-	}
+    int value = 0;
+    Node* next = NULL;
+    Node(int new_value) {
+        value = new_value;
+    }
 };
 
 void append(int new_value, Node*& list_head);
@@ -306,40 +306,40 @@ void print_list(Node* ptr);
 void delete_list(Node*& ptr);
 
 int main() {
-	Node* list_head = NULL;
-	append(11, list_head);
-	append(12, list_head);
-	append(13, list_head);
-	append(14, list_head);
+    Node* list_head = NULL;
+    append(11, list_head);
+    append(12, list_head);
+    append(13, list_head);
+    append(14, list_head);
 
-	print_list(list_head);
+    print_list(list_head);
 
-	delete_list(list_head);
-	return 0;
+    delete_list(list_head);
+    return 0;
 }
 
 void append(int new_value, Node*& list_head) {
-	if (list_head == NULL) {
-		list_head = new Node(new_value);
-		return;
-	}
-	Node* ptr = list_head;
-	while (ptr->next != NULL)
-		ptr = ptr->next;
-	ptr->next = new Node(new_value);
+    if (list_head == NULL) {
+        list_head = new Node(new_value);
+        return;
+    }
+    Node* ptr = list_head;
+    while (ptr->next != NULL)
+        ptr = ptr->next;
+    ptr->next = new Node(new_value);
 }
 
 void print_list(Node* ptr) {
-	for (; ptr != NULL; ptr = ptr->next)
-		cout << ptr->value << " ";
+    for (; ptr != NULL; ptr = ptr->next)
+        cout << ptr->value << " ";
 }
 
 void delete_list(Node*& ptr) {
-	while (ptr != NULL) {
-		Node* temp = ptr->next;
-		delete ptr;
-		ptr = temp;
-	}
+    while (ptr != NULL) {
+        Node* temp = ptr->next;
+        delete ptr;
+        ptr = temp;
+    }
 }
 ```
 
@@ -544,9 +544,9 @@ Output: `120`
 
 ```cpp
 int find_sum(Node* node_ptr) {
-	if (node_ptr == NULL)
-		return 0;
-	return node_ptr->value + find_sum(node_ptr->next);
+    if (node_ptr == NULL)
+        return 0;
+    return node_ptr->value + find_sum(node_ptr->next);
 }
 ```
 
@@ -554,9 +554,9 @@ int find_sum(Node* node_ptr) {
 
 ```cpp
 int find_length(Node* node_ptr) {
-	if (node_ptr == NULL)
-		return 0;
-	return 1 + find_length(node_ptr->next);
+    if (node_ptr == NULL)
+        return 0;
+    return 1 + find_length(node_ptr->next);
 }
 ```
 
@@ -564,11 +564,11 @@ int find_length(Node* node_ptr) {
 
 ```cpp
 int find_value(int target, Node* node_ptr, int i) {
-	if (node_ptr == NULL)
-		return -1;
-	if (target == node_ptr->value)
-		return i;
-	return find_value(target, node_ptr->next, i + 1);
+    if (node_ptr == NULL)
+        return -1;
+    if (target == node_ptr->value)
+        return i;
+    return find_value(target, node_ptr->next, i + 1);
 }
 ```
 
@@ -576,16 +576,16 @@ int find_value(int target, Node* node_ptr, int i) {
 
 ```cpp
 void insert(int new_value, int index, Node** next_ptr) {
-	if (index == 0)
+    if (index == 0)
     {
-		Node* new_node = new Node(new_value);
-		new_node->next = *next_ptr;
-		*next_ptr = new_node;
-	}
-	else if (*next_ptr == NULL)
-		cout << "Error! Invalid index." << endl;
-	else
-		insert(new_value, index - 1, &(*next_ptr)->next);
+        Node* new_node = new Node(new_value);
+        new_node->next = *next_ptr;
+        *next_ptr = new_node;
+    }
+    else if (*next_ptr == NULL)
+        cout << "Error! Invalid index." << endl;
+    else
+        insert(new_value, index - 1, &(*next_ptr)->next);
 }
 ```
 
