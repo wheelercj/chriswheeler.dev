@@ -1,7 +1,7 @@
 +++
 title = 'Algorithms'
 date = 2021-06-20T15:27:51-08:00
-lastmod = 2024-04-28T09:16:06-07:00
+lastmod = 2024-12-10T22:28:04-08:00
 tags = []
 +++
 
@@ -23,6 +23,8 @@ tags = []
 * [Explorable Explanations](https://explorabl.es/programming/)
 * [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) by David Galles
 * [algorithm-visualizer.org](https://algorithm-visualizer.org/)
+* [B Tree Visualization](https://btree.app/)
+* [B+ Tree Visualization](https://bplustree.app/)
 * [search online for "algorithm visualizations"](https://duckduckgo.com/?t=ffab&q=algorithm+visualizations&atb=v305-1&ia=web)
 
 ## implementation examples
