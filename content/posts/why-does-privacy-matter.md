@@ -1,7 +1,7 @@
 +++
 title = 'Why does privacy matter?'
 date = 2024-01-13T11:20:53-08:00
-lastmod = 2024-01-13T12:27:00-08:00
+lastmod = 2025-01-07T13:36:45-08:00
 tags = []
 +++
 
@@ -14,3 +14,7 @@ These examples are obvious, but sometimes security vulnerabilities are not obvio
 Businesses spin ideas in their favor, like the idea of identity theft, which implies you made a security mistake and were robbed when it was actually a credit bureau that used an insecure method of authentication and doesn't want to have responsibility. The idea of privacy is also used by businesses to make security vulnerabilities sound less problematic.
 
 Of course, sometimes you have to choose between security (including privacy) and convenience, and sometimes convenience is more important. To find your healthy balancing point, it's important to understand what your choices are.
+
+## Further reading
+
+- [Online Behavioral Ads Fuel the Surveillance Industry—Here’s How \| Electronic Frontier Foundation](https://www.eff.org/deeplinks/2025/01/online-behavioral-ads-fuel-surveillance-industry-heres-how)
