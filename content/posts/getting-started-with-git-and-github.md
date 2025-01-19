@@ -1,7 +1,7 @@
 +++
 title = 'Getting started with Git and GitHub'
 date = 2021-09-07T14:42:16-08:00
-lastmod = 2024-12-10T14:49:04-08:00
+lastmod = 2025-01-19T10:53:23-08:00
 tags = []
 +++
 
@@ -53,6 +53,7 @@ Another example of a Git workflow with a different use-case is covered in [A suc
 
 ## alternatives to GitHub
 
+* [Forgejo](https://forgejo.org/)
 * [GitLab](https://about.gitlab.com/)
 * [Bitbucket](https://bitbucket.org/product/)
 * [Codeberg](https://codeberg.org/)
