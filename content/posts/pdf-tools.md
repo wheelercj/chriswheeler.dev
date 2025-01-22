@@ -1,7 +1,7 @@
 +++
 title = 'PDF tools'
 date = 2024-05-09T12:22:27-07:00
-lastmod = 2024-11-18T13:07:45-08:00
+lastmod = 2025-01-22T13:04:34-08:00
 tags = []
 +++
 
@@ -19,22 +19,24 @@ Here are a bunch of tools I found for reading, editing, and more with PDFs. I ha
 * [PDF Annotator](https://pdf-annotator.repeat.day/) is for signing and annotating PDFs.
 * [Zotero](https://www.zotero.org/) can save PDFs from websites and includes a PDF reader that lets you add annotations.
 * [DocuSeal](https://github.com/docusealco/docuseal) is an open source DocuSign alternative for creating, filling, and signing documents.
-* [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools for manipulating images, including PDFs by using Ghostscript.
+* [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools for manipulating images, including PDFs by using [Ghostscript](https://ghostscript.com/index.html).
 
-## Automate
+## Add a text layer using optical character recognition (OCR)
 
-* [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools for manipulating images, including PDFs by using Ghostscript.
-* [here's an HN discussion](https://news.ycombinator.com/item?id=41377960) that lists various tools for analyzing PDFs, such as to look for malicious code.
-* [Ghostscript](https://ghostscript.com/index.html) is an interpreter for the PostScript® language and PDF files.
+Some PDFs don't come with a text layer. Adding one makes them searchable, copyable, etc.
 
-## Add a text layer using OCR
-
-* [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) performs optical character recognition (OCR) to add a text layer to PDFs, making them searchable, copyable, etc.
+* [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF)
+* [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR)
 
 ## Convert
 
-* [this HN discussion](https://news.ycombinator.com/item?id=39027543) covers several tools that can be used to generate PDFs using HTML and CSS.
 * [Pandoc](https://pandoc.org/) converts files between many formats.
+* [this HN discussion](https://news.ycombinator.com/item?id=39027543) covers and compares several tools that can be used to generate PDFs using HTML and CSS.
+* [htmldocs](https://htmldocs.com/) is a React library for building and generating documents.
+* [HTML to PDF conversion API \| html2pdf.app](https://html2pdf.app/)
+* [Automate PDF Document Generation \| CraftMyPDF.com](https://craftmypdf.com/)
+* [Cloudmersive's document and data conversion APIs](https://cloudmersive.com/convert-api)
+* [Pdflayer API \| Free, High Quality HTML to PDF API](https://pdflayer.com/)
 * [PrintFriendly](https://www.printfriendly.com/) converts many file formats to PDF for better printing.
 * [PrintWhatYouLike.com](https://www.printwhatyoulike.com/) lets you print the good parts of any web page while skipping ads and other junk.
 * [Marker](https://github.com/vikparuchuri/marker) converts PDF to markdown, optionally using [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF).
@@ -65,7 +67,7 @@ PDFs are not just static files. They can contain code. For example, someone buil
 * [zbetcheckin's PDF analysis](https://github.com/zbetcheckin/PDF_analysis?tab=readme-ov-file) is a collection of tools for analyzing PDFs for security threats.
 * [here's an HN discussion](https://news.ycombinator.com/item?id=41377960) that lists various tools for analyzing PDFs, such as to look for malicious code.
 * [Canarytokens.org](https://canarytokens.org/nest/) can create PDFs and many other things that notify you when they're opened by certain applications to help you detect security breaches.
-* [Submit a file for malware analysis - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission). Use this for files that you believe are malware or are incorrectly classified as malware by Windows Defender.
+* [Submit a file for malware analysis \| Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission). Use this for files that you believe are malware or are incorrectly classified as malware by Windows Defender.
 
 ## Collections
 
@@ -100,4 +102,4 @@ These applications and websites are collections of many PDF tools.
 | extract images | ? | ? | ? | ✅ | ? | ? |
 | automation | ? | ? | ? | ✅ | ? | ✅ |
 
-[ImageMagick](https://imagemagick.org/script/formats.php) might also be able to do many of these, but requires more technical skill as it is a suite of command line tools.
+[ImageMagick](https://imagemagick.org/script/formats.php) might also be able to do many/all of these, but requires more technical skill as it is a suite of command line tools.
