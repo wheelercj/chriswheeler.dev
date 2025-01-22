@@ -7,26 +7,54 @@ tags = []
 
 Here are a bunch of tools I found for reading, editing, and more with PDFs. I have not tried all of these but they all look promising.
 
+## Read
+
 * [Sumatra PDF](https://www.sumatrapdfreader.org/free-pdf-reader) is the best PDF reader for Windows.
+* The default PDF readers on other platforms seem to work well.
+
+## Edit, annotate, sign, or fill
+
 * [SimplePDF](https://simplepdf.eu/) is an in-browser PDF editor.
-* [Zotero](https://www.zotero.org/) includes a PDF reader that lets you add annotations to PDFs, and makes it easy to save PDFs and info about them from websites.
-* [Pandoc](https://pandoc.org/) converts files between many formats.
-* [Ghostscript](https://ghostscript.com/index.html) is an interpreter for the PostScript® language and PDF files.
-* [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools for manipulating images, including PDFs by using Ghostscript.
-* [DocuSeal](https://github.com/docusealco/docuseal) is an open source DocuSign alternative for creating, filling, and signing documents.
-* [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) performs optical character recognition (OCR) to add a text layer to PDFs, making them searchable, among other benefits.
-* [Marker](https://github.com/vikparuchuri/marker) converts PDF to markdown, optionally using OCRmyPDF.
-* [MinerU](https://github.com/opendatalab/MinerU) converts PDF to markdown or JSON, optionally using [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR).
-* [pydigitize](https://news.ycombinator.com/item?id=30615279) uses OCRmyPDF and other tools to convert paper documents to PDFs ready for archival.
-* [Diff-pdf](https://news.ycombinator.com/item?id=40854319) is for visualizing the differences between two PDFs.
-* [PDF-Diff](https://news.ycombinator.com/item?id=32353479) is another tool for visualizing the differences between two PDFs.
+* Some browsers, such as Firefox, include PDF editing tools. You can select a PDF and "Open with" a browser.
 * [PDF Annotator](https://pdf-annotator.repeat.day/) is for signing and annotating PDFs.
-* [ripgrep-all](https://github.com/phiresky/ripgrep-all) is like ripgrep, but also searches PDFs and many other file types.
-* [Bank Statement Converter](https://bankstatementconverter.com/) converts PDF bank statements to Excel's XLS format, though most banks let you export CSV files.
+* [Zotero](https://www.zotero.org/) can save PDFs from websites and includes a PDF reader that lets you add annotations.
+* [DocuSeal](https://github.com/docusealco/docuseal) is an open source DocuSign alternative for creating, filling, and signing documents.
+* [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools for manipulating images, including PDFs by using Ghostscript.
+
+## Automate
+
+* [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools for manipulating images, including PDFs by using Ghostscript.
+* [here's an HN discussion](https://news.ycombinator.com/item?id=41377960) that lists various tools for analyzing PDFs, such as to look for malicious code.
+* [Ghostscript](https://ghostscript.com/index.html) is an interpreter for the PostScript® language and PDF files.
+
+## Add a text layer using OCR
+
+* [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF) performs optical character recognition (OCR) to add a text layer to PDFs, making them searchable, copyable, etc.
+
+## Convert
+
+* [this HN discussion](https://news.ycombinator.com/item?id=39027543) covers several tools that can be used to generate PDFs using HTML and CSS.
+* [Pandoc](https://pandoc.org/) converts files between many formats.
 * [PrintFriendly](https://www.printfriendly.com/) converts many file formats to PDF for better printing.
 * [PrintWhatYouLike.com](https://www.printwhatyoulike.com/) lets you print the good parts of any web page while skipping ads and other junk.
-* [this HN discussion](https://news.ycombinator.com/item?id=39027543) covers several tools that can be used to generate PDFs using HTML and CSS.
-* [here's an HN discussion](https://news.ycombinator.com/item?id=41377960) that lists various tools for analyzing PDFs, such as to look for malicious code.
+* [Marker](https://github.com/vikparuchuri/marker) converts PDF to markdown, optionally using [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF).
+* [MinerU](https://github.com/opendatalab/MinerU) converts PDF to markdown or JSON, optionally using [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR).
+* [pydigitize](https://news.ycombinator.com/item?id=30615279) uses OCRmyPDF and other tools to convert paper documents to PDFs ready for archival.
+* [Bank Statement Converter](https://bankstatementconverter.com/) converts PDF bank statements to Excel's XLS format, though most banks let you export CSV files.
+
+## Search
+
+* [ripgrep-all](https://github.com/phiresky/ripgrep-all) is like ripgrep, but also searches PDFs and many other file types.
+* [Zotero](https://www.zotero.org/) saves data alongside each saved document to make them easier to find.
+
+## Organize
+
+* [Zotero](https://www.zotero.org/) is excellent at organizing research. It's probably the best citation manager.
+
+## Compare
+
+* [Diff-pdf](https://news.ycombinator.com/item?id=40854319) is for visualizing the differences between two PDFs.
+* [PDF-Diff](https://news.ycombinator.com/item?id=32353479) is another tool for visualizing the differences between two PDFs.
 
 ## Security
 
@@ -35,6 +63,7 @@ PDFs are not just static files. They can contain code. For example, someone buil
 * [VirusTotal](https://www.virustotal.com/gui/home/upload) can analyze files, websites, and more for security threats. This online service makes submissions public.
 * [Jotti's malware scan](https://virusscan.jotti.org/en-US/scan-file) also scans files.
 * [zbetcheckin's PDF analysis](https://github.com/zbetcheckin/PDF_analysis?tab=readme-ov-file) is a collection of tools for analyzing PDFs for security threats.
+* [here's an HN discussion](https://news.ycombinator.com/item?id=41377960) that lists various tools for analyzing PDFs, such as to look for malicious code.
 * [Canarytokens.org](https://canarytokens.org/nest/) can create PDFs and many other things that notify you when they're opened by certain applications to help you detect security breaches.
 * [Submit a file for malware analysis - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission). Use this for files that you believe are malware or are incorrectly classified as malware by Windows Defender.
 
