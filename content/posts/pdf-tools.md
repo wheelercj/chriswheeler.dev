@@ -21,6 +21,7 @@ Here are a bunch of tools I found for reading, editing, and more with PDFs. I ha
 * [Diff-pdf](https://news.ycombinator.com/item?id=40854319) is for visualizing the differences between two PDFs.
 * [PDF-Diff](https://news.ycombinator.com/item?id=32353479) is another tool for visualizing the differences between two PDFs.
 * [PDF Annotator](https://pdf-annotator.repeat.day/) is for signing and annotating PDFs.
+* [ripgrep-all](https://github.com/phiresky/ripgrep-all) is like ripgrep, but also searches PDFs and many other file types.
 * [Bank Statement Converter](https://bankstatementconverter.com/) converts PDF bank statements to Excel's XLS format, though most banks let you export CSV files.
 * [PrintFriendly](https://www.printfriendly.com/) converts many file formats to PDF for better printing.
 * [PrintWhatYouLike.com](https://www.printwhatyoulike.com/) lets you print the good parts of any web page while skipping ads and other junk.
@@ -29,9 +30,13 @@ Here are a bunch of tools I found for reading, editing, and more with PDFs. I ha
 
 ## Security
 
+PDFs are not just static files. They can contain code. For example, someone built [Tetris in a PDF](https://news.ycombinator.com/item?id=42645218). Below are some tools that could help with PDF security.
+
 * [VirusTotal](https://www.virustotal.com/gui/home/upload) can analyze files, websites, and more for security threats. This online service makes submissions public.
+* [Jotti's malware scan](https://virusscan.jotti.org/en-US/scan-file) also scans files.
 * [zbetcheckin's PDF analysis](https://github.com/zbetcheckin/PDF_analysis?tab=readme-ov-file) is a collection of tools for analyzing PDFs for security threats.
-* [Canarytokens.org](https://canarytokens.org/nest/) can create PDFs and many other things that notify you when they're opened to help you detect security breaches.
+* [Canarytokens.org](https://canarytokens.org/nest/) can create PDFs and many other things that notify you when they're opened by certain applications to help you detect security breaches.
+* [Submit a file for malware analysis - Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission). Use this for files that you believe are malware or are incorrectly classified as malware by Windows Defender.
 
 ## Collections
 
