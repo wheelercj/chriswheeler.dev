@@ -41,8 +41,12 @@ Some PDFs don't come with a text layer. Adding one makes them searchable, copyab
 * [PrintWhatYouLike.com](https://www.printwhatyoulike.com/) lets you print the good parts of any web page while skipping ads and other junk.
 * [Marker](https://github.com/vikparuchuri/marker) converts PDF to markdown, optionally using [OCRmyPDF](https://github.com/ocrmypdf/OCRmyPDF).
 * [MinerU](https://github.com/opendatalab/MinerU) converts PDF to markdown or JSON, optionally using [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR).
-* [pydigitize](https://news.ycombinator.com/item?id=30615279) uses OCRmyPDF and other tools to convert paper documents to PDFs ready for archival.
 * [Bank Statement Converter](https://bankstatementconverter.com/) converts PDF bank statements to Excel's XLS format, though most banks let you export CSV files.
+
+### Scanning paper documents
+
+* [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) helps you scan, index and archive all your physical documents.
+* [pydigitize](https://news.ycombinator.com/item?id=30615279) uses OCRmyPDF and other tools to convert paper documents to PDFs ready for archival.
 
 ## Search
 
