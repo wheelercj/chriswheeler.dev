@@ -73,6 +73,13 @@ PDFs are not just static files. They can contain code. For example, someone buil
 * [Canarytokens.org](https://canarytokens.org/nest/) can create PDFs and many other things that notify you when they're opened by certain applications to help you detect security breaches.
 * [Submit a file for malware analysis \| Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission). Use this for files that you believe are malware or are incorrectly classified as malware by Windows Defender.
 
+## Automation
+
+* [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools.
+* [OpenPDF](https://github.com/LibrePDF/OpenPDF) is a Java library.
+* [Apache PDFBox](https://en.wikipedia.org/wiki/Apache_PDFBox)
+* [QPDF](https://en.wikipedia.org/wiki/QPDF)
+
 ## Collections
 
 These applications and websites are collections of many PDF tools.
