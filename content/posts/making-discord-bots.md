@@ -1,6 +1,7 @@
 +++
 title = 'Making discord bots'
 date = 2025-03-12T20:14:50-07:00
+lastmod = 2025-03-13T13:40:55-07:00
 tags = []
 +++
 
@@ -80,6 +81,10 @@ When I sync slash commands for the first time, I start with one of [jishaku](htt
 Messages can be ephemeral, which means that they can only be seen by their sender and receiver, and will eventually disappear. Bots can only send ephemeral messages in response to [interactions](https://discordpy.readthedocs.io/en/stable/interactions/api.html), such as slash commands.
 
 You can send an ephemeral message with `await ctx.send("Secret message", ephemeral=True)`. However, you must not use it with `async with ctx.typing():` or else the message will not be ephemeral. Apparently, using `ctx.typing` counts as sending a non-ephemeral message, and `ctx.send` kind of "edits" that "message", but cannot edit whether it is ephemeral. Fortunately, interactions already show a loading indicator anyways, so using `ctx.typing` should not be necessary.
+
+### Interaction exception handling
+
+Any exceptions raised in view or modal callbacks are passed to that object's `on_error` method, but nowhere else. It is recommended to subclass `discord.ui.View`, implement `on_error`, and subclass that view so you can handle all view errors in one place. Same for modals.
 
 ## Examples
 
