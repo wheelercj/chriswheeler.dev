@@ -1,7 +1,7 @@
 +++
 title = 'Making discord bots'
 date = 2025-03-12T20:14:50-07:00
-lastmod = 2025-03-13T15:09:07-07:00
+lastmod = 2025-03-15T16:53:33-07:00
 tags = []
 +++
 
@@ -64,7 +64,7 @@ That's why the rest of this post—except the examples at the end—will just be
 
 ## Interactions
 
-An [interaction](https://discordpy.readthedocs.io/en/stable/interactions/api.html) must be responded to within 3 seconds, or an error will occur. If more time will be needed, you should use [defer](https://discordpy.readthedocs.io/en/stable/interactions/api.html#discord.InteractionResponse.defer), and then [followup](https://discordpy.readthedocs.io/en/stable/interactions/api.html#discord.Interaction.followup) within 15 minutes.
+An [interaction](https://discordpy.readthedocs.io/en/stable/interactions/api.html) must be responded to exactly once and within 3 seconds, or an error will occur. If more time will be needed, you should use [defer](https://discordpy.readthedocs.io/en/stable/interactions/api.html#discord.InteractionResponse.defer), and then [followup](https://discordpy.readthedocs.io/en/stable/interactions/api.html#discord.Interaction.followup) within 15 minutes.
 
 As of 2025-03-12, modals cannot contain selects or buttons, and views cannot contain text inputs. Discord's developers have not said whether this will ever change.
 
