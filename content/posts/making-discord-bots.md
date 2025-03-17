@@ -78,6 +78,8 @@ Syncing slash commands is somewhat confusing and error-prone. Discord has some r
 
 When I sync slash commands for the first time, I start with one of [jishaku](https://github.com/scarletcafe/jishaku)'s commands: `jishaku sync .` (notice the period). This command syncs server commands to the current server. It can detect some problems and give feedback. If that works, I then sync global commands to the current server with [a command I wrote](https://github.com/wheelercj/Parhelion/blob/3355b2374fa75a2aae1009d601e9e94488b66175/cogs/owner.py#L487) that's fairly standard. From there, you can test your slash commands more, sync global commands globally, etc.
 
+If you end up with two of each slash command, try removing the bot from the server and adding it again.
+
 ### Ephemeral messages
 
 Messages can be ephemeral, which means that they can only be seen by their sender and receiver, and will eventually disappear. Bots can only send ephemeral messages in response to [interactions](https://discordpy.readthedocs.io/en/stable/interactions/api.html), such as slash commands.
