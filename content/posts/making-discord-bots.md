@@ -64,7 +64,7 @@ That's why the rest of this post—except the examples at the end—will just be
 
 ## Interactions
 
-An [interaction](https://discordpy.readthedocs.io/en/stable/interactions/api.html) must be responded to exactly once and within 3 seconds, or an error will occur. If more time will be needed, you should use [defer](https://discordpy.readthedocs.io/en/stable/interactions/api.html#discord.InteractionResponse.defer), and then [followup](https://discordpy.readthedocs.io/en/stable/interactions/api.html#discord.Interaction.followup) within 15 minutes.
+An [interaction](https://discordpy.readthedocs.io/en/stable/interactions/api.html) must be responded to exactly once and within 3 seconds, or an error will occur. If more time and/or multiple responses will be needed, you should use [defer](https://discordpy.readthedocs.io/en/stable/interactions/api.html#discord.InteractionResponse.defer), and then [followup](https://discordpy.readthedocs.io/en/stable/interactions/api.html#discord.Interaction.followup) within 15 minutes.
 
 As of 2025-03-12, modals can only contain text inputs, and views cannot contain text inputs. A single modal can have up to 5 text inputs. A single select (a dropdown menu) can have up to 25 options. As far as I know, Discord's developers have not said whether these will ever change.
 
