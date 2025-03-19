@@ -1,13 +1,13 @@
 +++
 title = 'Making discord bots'
 date = 2025-03-12T20:14:50-07:00
-lastmod = 2025-03-18T12:53:07-07:00
+lastmod = 2025-03-18T18:49:53-07:00
 tags = []
 +++
 
 Discord bots run as web services that use Discord's API. They listen for requests from Discord and send responses. They need their own databases if a way to persist data is necessary. However, some Discord bot features require saving some data about the bot in Discord's servers, such as slash command names.
 
-Automated testing of Discord bots tends to be very limited or nonexistent since Discord has rate limits and is too complex to practically mock. Creating Discord bots tends to require a lot of trial and error, but speeds up as you learn. It's fun since you can get a simple bot up and running fairly quickly, and the visual feedback you get from each improvement can be very satisfying. Now that I've built a multi-purpose Discord bot, I've been able to create new, specialized bots within only a few days each when the opportunity arises since I mostly understand the API and have code to copy.
+Automated testing of Discord bots tends to be very limited or nonexistent since Discord has rate limits and is too complex to practically mock. Creating Discord bots requires a lot of trial and error, but speeds up as you learn. It's fun since you can get a simple bot up and running fairly quickly, and the visual feedback you get from each improvement can be very satisfying. Now that I've built a multi-purpose Discord bot, I've been able to create new, specialized bots within only a few days each when the opportunity arises since I mostly understand the API and have code to copy.
 
 There are Discord API wrappers for many languages. The one I'm familiar with is [Rapptz/discord.py: An API wrapper for Discord written in Python](https://github.com/Rapptz/discord.py).
 
@@ -74,11 +74,21 @@ The `long` and `paragraph` text input styles are identical both visually and fun
 
 To add slash commands to a bot, after writing the code for them, you need to sync the commands to Discord. In other words, you have to save some info about the slash commands in Discord's servers, such as the command names.
 
-Syncing slash commands is somewhat confusing and error-prone. Discord has some rules such as a limit on the number of slash commands a bot can have, and a limit on the total combined length of all slash command names, cog names, descriptions, etc. If these limits are exceeded, the problem can be difficult to diagnose. A while ago, I wrote [a command](https://github.com/wheelercj/Parhelion/blob/3355b2374fa75a2aae1009d601e9e94488b66175/cogs/owner.py#L406) that searches for problems that would make syncing fail; I haven't been trying to keep it up to date, but it might still be correct. There's also a rate limit on syncing commands; you can only attempt syncing every once in a while, and Discord tends to be vague about what their rate limits are.
+If your bot uses [jishaku](https://github.com/scarletcafe/jishaku), you can use:
 
-When I sync slash commands for the first time, I start with one of [jishaku](https://github.com/scarletcafe/jishaku)'s commands: `jishaku sync .` (notice the period). This command syncs server commands to the current server. It can detect some problems and give feedback. If that works, I then sync global commands to the current server with [a command I wrote](https://github.com/wheelercj/Parhelion/blob/3355b2374fa75a2aae1009d601e9e94488b66175/cogs/owner.py#L487) that's fairly standard. From there, you can test your slash commands more, sync global commands globally, etc.
+- `jsk sync $` to sync all global slash commands globally
+- `jsk sync .` to sync any slash commands that are just for the current Discord server
+- `jsk sync *` to sync server slash commands to all known servers
 
-If you end up with two of each slash command, try removing the bot from the server and adding it again.
+Jishaku can give you feedback in most cases if there's a problem with your slash command data. Discord has a bunch of rules about slash commands, such as how long the command descriptions are. There's also a rate limit on syncing commands, and Discord is usually vague about what their rate limits are.
+
+If you ever end up with two of each slash command, there are a few things you can try that might help:
+
+- press `Ctrl+R` (Mac: `Cmd+R`) to reload Discord
+- kick your bot from the server and add it again
+- wait a minute to see if Discord's servers were just temporarily inconsistent
+- try syncing again, but remember that there's a rate limit
+- if you somehow synced global commands globally **and** global commands to the current server, sync the current server's commands to the current server (I'm not sure if this problem is possible with Jishaku's sync commands)
 
 ### Ephemeral messages
 
