@@ -1,5 +1,5 @@
 +++
-title = 'Making discord bots'
+title = 'Making Discord bots'
 date = 2025-03-12T20:14:50-07:00
 lastmod = 2025-03-26T17:25:04-07:00
 tags = []
