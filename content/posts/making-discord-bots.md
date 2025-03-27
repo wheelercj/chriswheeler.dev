@@ -1,7 +1,7 @@
 +++
 title = 'Making discord bots'
 date = 2025-03-12T20:14:50-07:00
-lastmod = 2025-03-23T00:03:21-07:00
+lastmod = 2025-03-26T17:25:04-07:00
 tags = []
 +++
 
@@ -15,11 +15,11 @@ There are Discord API wrappers for many languages. The one I'm familiar with is 
 - Searching [the discord.py Discord server](https://discord.gg/dpy) for examples and answers is frequently helpful
 - [scarletcafe/jishaku: A debugging and testing cog for discord.py bots](https://github.com/scarletcafe/jishaku)
 
-Regardless of which tools you use, creating a Discord bot requires creating the bot's account in [the Discord Developer Portal](https://discord.com/developers/applications).
+Regardless of which tools you use, creating a Discord bot requires creating the bot's account in [the Discord Developer Portal](https://discord.com/developers/applications). Setting up your own local test instance of a bot you're working on makes manual testing and debugging much easier. For each bot I work on, I create an extra Discord bot account in the Discord Developer Portal for testing.
 
 ## Project structure
 
-There are multiple ways to structure the code for bots written with discord.py, but I'll describe the way that seems most common among well-written bots. The entrypoint is `main.py`, which only connects to the database, creates an instance of the bot, and starts the bot. In `bot.py`, a `Bot` class is defined that subclasses `commands.Bot`. This class has no commands. It only handles global events like logging, error handling, cooldowns (command rate limits), and managing _cogs_.
+There are multiple ways to structure the code for bots written with discord.py, but I'll describe the way that seems most common among well-written bots. The entrypoint is `main.py`, which only connects to the database, creates an instance of the bot, and starts the bot. In `bot.py`, a `Bot` class is defined that subclasses `commands.Bot`. This class has no commands. It only handles global events like logging, error handling, cooldowns (command rate limits), and managing _cogs_. Cogs are in a folder named `cogs`, which has a folder named `utils` containing various utilities shared among the cogs.
 
 ### Cogs
 
@@ -54,13 +54,43 @@ async def setup(bot):
     await bot.add_cog(Owner(bot))
 ```
 
+## Type annotations and docstrings
+
+Python's type annotations and docstrings usually have no runtime effect, but discord.py uses them for some features. As an example, I copied part of [wheelercj/GitHub-bot](https://github.com/wheelercj/GitHub-bot)'s `/issue list` command below. The `list_issues` method has three parameters after the `ctx` parameter: `repo_name`, `assignee`, and `state`. Since these are parameters of a command's function, they are parameters of the command. They each have a default value, so they are all optional. The `Literal["open", "closed", "all"]` tells Discord to require one of those three strings to be entered if the user enters anything for the `state` option. The `repo_name`, `assignee`, and `state` parameters are described in the docstring following [numpydoc's docstring standard](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard). Discord takes those descriptions and displays them when the user is entering options if the command is used as a slash command. They also appear in command help pages if you aren't using slash commands.
+
+```py
+    @commands.hybrid_group()
+    async def issue(self, ctx: commands.Context):
+        """A group of commands for managing GitHub issues"""
+
+    @issue.command(name="list", aliases=["ls"])
+    async def list_issues(
+        self,
+        ctx: commands.Context,
+        repo_name: str | None = None,
+        assignee: str | None = None,
+        state: Literal["open", "closed", "all"] = "open",
+    ):
+        """Shows a repo's GitHub issues
+
+        Parameters
+        ----------
+        repo_name: str | None
+            Filter repos by name, or part of the name.
+        assignee: str | None
+            Filter issues by the GitHub user assigned.
+        state: Literal["open", "closed", "all"]
+            Only show "open", "closed", or "all" issues. Defaults to "open".
+        """
+```
+
 ## Next steps
 
 > One must learn by doing the thing, for though you think you know it, you have no certainty until you try.
 > 
 > — Sophocles, 5th century B.C.
 
-That's why the rest of this post—except the examples at the end—will just be very specific tips and tricks.
+There's a lot about Discord bots that I'm not covering here because you will learn so much faster with experimentation, looking at examples like the ones at the end of this page, and asking questions. That's why the rest of this post will just be very specific tips and tricks. If you're new to working on Discord bots and you're joining an existing project, it may be worth it to create a small Discord bot of your own so you understand more of the framework.
 
 ## Interactions
 
