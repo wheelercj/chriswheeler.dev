@@ -1,7 +1,7 @@
 +++
 title = 'Making Discord bots'
 date = 2025-03-12T20:14:50-07:00
-lastmod = 2025-03-26T17:25:04-07:00
+lastmod = 2025-04-04T17:24:25-07:00
 tags = []
 +++
 
@@ -16,6 +16,8 @@ There are Discord API wrappers for many languages. The one I'm familiar with is 
 - [scarletcafe/jishaku: A debugging and testing cog for discord.py bots](https://github.com/scarletcafe/jishaku)
 
 Regardless of which tools you use, creating a Discord bot requires creating the bot's account in [the Discord Developer Portal](https://discord.com/developers/applications). Setting up your own local test instance of a bot you're working on makes manual testing and debugging much easier. For each bot I work on, I create an extra Discord bot account in the Discord Developer Portal for testing.
+
+The [Discord Developer Documentation](https://discord.com/developers/docs/intro) is sometimes helpful too even though it kind of assumes you're not using an API wrapper.
 
 ## Project structure
 
@@ -100,7 +102,15 @@ As of 2025-03-12, modals can only contain text inputs, and views cannot contain 
 
 The `long` and `paragraph` text input styles are identical both visually and functionally.
 
-### Syncing slash commands
+### Slash commands
+
+Slash commands cannot have aliases, but you could create multiple slash commands that run the same code. If you create hybrid commands with aliases, the aliases will only be available as prefix commands.
+
+It's possible to create a slash command with subcommands, such as `/issue create` and `/issue list`, but doing so makes invoking `/issue` impossible. If you create `/issue list all`, then `/issue list` also becomes impossible to invoke. However, subcommand names can have dashes, such as `/issue list-all`.
+
+You cannot create more than three levels of commands. For example, you can create `/a b c`, but not `/a b c d`.
+
+#### Syncing slash commands
 
 To add slash commands to a bot, after writing the code for them, you need to sync the commands to Discord. In other words, you have to save some info about the slash commands in Discord's servers, such as the command names.
 
