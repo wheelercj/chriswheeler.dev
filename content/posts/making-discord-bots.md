@@ -1,7 +1,7 @@
 +++
 title = 'Making Discord bots'
 date = 2025-03-12T20:14:50-07:00
-lastmod = 2025-04-04T17:24:25-07:00
+lastmod = 2025-04-05T22:26:13-07:00
 tags = []
 +++
 
@@ -120,7 +120,7 @@ If your bot uses [jishaku](https://github.com/scarletcafe/jishaku), you can use:
 - `jsk sync .` to sync any slash commands that are just for the current Discord server
 - `jsk sync *` to sync server slash commands to all known servers
 
-Jishaku can give you feedback in most cases if there's a problem with your slash command data. Discord has a bunch of rules about slash commands, such as how long the command descriptions are. There's also a rate limit on syncing commands, and Discord is usually vague about what their rate limits are.
+After syncing, you might want to reload Discord by pressing `Ctrl+R` (Mac: `Cmd+R`) so the changes appear quickly. Jishaku can give you feedback in most cases if there's a problem with your slash command data. Discord has a bunch of rules about slash commands, such as how long the command descriptions are. There's also a rate limit on syncing commands, and Discord is usually vague about what their rate limits are.
 
 If you ever end up with two of each slash command, there are a few things you can try that might help:
 
