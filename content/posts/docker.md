@@ -1,7 +1,7 @@
 +++
 title = 'Docker'
 date = 2024-01-24T13:10:44-08:00
-lastmod = 2024-02-22T18:48:05-08:00
+lastmod = 2025-05-01T17:14:44-07:00
 tags = []
 +++
 
@@ -25,9 +25,9 @@ There are already many guides and tutorials I'll let you find. For me, it was he
 * [`docker compose` official documentation](https://docs.docker.com/compose/reference/)
 * The `docker-compose` tool has been deprecated in favor of the newer `docker compose` command.
 
-Docker tends to be easier to use when you have a docker-compose.yml file and use the `docker compose` command to create and manage containers and their volumes.
+Docker tends to be easier to use when you have a docker-compose.yaml file and use the `docker compose` command to create and manage containers and their volumes.
 
-* `docker compose up -d` follows instructions in docker-compose.yml to build and run the app. Images may be built and/or downloaded from [Docker Hub](https://hub.docker.com) if needed before containers are created from the images. The `-d` makes the containers run in detached mode, i.e. they run in the background.
+* `docker compose up -d` follows instructions in docker-compose.yaml to build and run the app. Images may be built and/or downloaded from [Docker Hub](https://hub.docker.com) if needed before containers are created from the images. The `-d` makes the containers run in detached mode, i.e. they run in the background.
 * `docker compose logs -ft` to see the live Docker logs. Note that some apps have logs of their own that may be accessible somewhere else.
 * `docker compose up -d --build` to rebuild images and to create and run the containers.
 * `docker compose up -d --pull=always` to redownload images from Docker Hub and to create and run the containers.
