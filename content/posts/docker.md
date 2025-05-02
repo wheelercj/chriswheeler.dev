@@ -23,7 +23,7 @@ There are already many guides and tutorials I'll let you find. For me, it was he
 
 * [`docker` official documentation](https://docs.docker.com/engine/reference/commandline/cli/)
 * [`docker compose` official documentation](https://docs.docker.com/compose/reference/)
-* The `docker-compose` tool has been deprecated in favor of the newer `docker compose` command.
+* The `docker-compose` tool has been deprecated in favor of the newer `docker compose` command (notice the dash has been removed)
 
 Docker tends to be easier to use when you have a docker-compose.yaml file and use the `docker compose` command to create and manage containers and their volumes.
 
