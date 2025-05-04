@@ -21,6 +21,10 @@ Here are a bunch of tools I found for reading, editing, and more with PDFs. I ha
 * [DocuSeal](https://github.com/docusealco/docuseal) is an open source DocuSign alternative for creating, filling, and signing documents.
 * [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools for manipulating images, including PDFs by using [Ghostscript](https://ghostscript.com/index.html).
 
+## Crop or split pages
+
+* [Briss](https://github.com/mbaeuerle/Briss-2.0)
+
 ## Add a text layer using optical character recognition (OCR)
 
 Some PDFs don't come with a text layer. Adding one makes them searchable, copyable, etc.
