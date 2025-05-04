@@ -1,7 +1,7 @@
 +++
 title = 'PDF tools'
 date = 2024-05-09T12:22:27-07:00
-lastmod = 2025-01-22T13:04:34-08:00
+lastmod = 2025-05-03T21:47:34-07:00
 tags = []
 +++
 
@@ -51,6 +51,7 @@ Some PDFs don't come with a text layer. Adding one makes them searchable, copyab
 
 * [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) helps you scan, index and archive all your physical documents.
 * [pydigitize](https://news.ycombinator.com/item?id=30615279) uses OCRmyPDF and other tools to convert paper documents to PDFs ready for archival.
+* [Deskew](https://github.com/galfar/deskew) is a command line tool for deskewing scanned text documents. It uses Hough transform to detect "text lines" in the image. As an output, you get an image rotated so that the lines are horizontal.
 
 ## Search
 
