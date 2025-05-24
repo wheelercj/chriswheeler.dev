@@ -1,7 +1,7 @@
 +++
 title = 'Making Discord bots'
 date = 2025-03-12T20:14:50-07:00
-lastmod = 2025-04-05T22:26:13-07:00
+lastmod = 2025-05-23T22:58:34-07:00
 tags = []
 +++
 
@@ -139,6 +139,10 @@ You can send an ephemeral message with `await ctx.send("Secret message", ephemer
 ### Interaction exception handling
 
 Any exceptions raised in view or modal callbacks are passed to that object's `on_error` method, but nowhere else. It is recommended to subclass `discord.ui.View`, implement `on_error`, and subclass that view so you can handle all view errors in one place. Same for modals.
+
+## Proxying
+
+The Discord.py library expects you to not be using a proxy (such as nginx). If you do, several of the library's features will break including rate limiting. There's a chance [Twilight](https://github.com/twilight-rs)'s proxy is an exception.
 
 ## Examples
 
