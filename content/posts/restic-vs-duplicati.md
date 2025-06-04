@@ -35,7 +35,7 @@ Restic runs much faster than Duplicati. A typical backup with Duplicati would us
 
 **Excluding**
 
-As a software developer, I have many large folders of temporary data that are pointless to back up. Their names are predictable but there locations are not. Even though storage space is cheap, storing this extra data adds up and costs a lot of money.
+As a software developer, I have many large folders of temporary data that are pointless to back up. Their names are predictable but their locations are not. Even though storage space is cheap, storing this extra data adds up and costs a lot of money.
 
 With Duplicati, you have to manually deselect each and every folder that you don't want to back up (if it's within a folder you are backing up). This is time consuming and prone to mistakes.
 
@@ -76,7 +76,7 @@ The function above is part of the script I described in [Why not cron on worksta
 
 **Troubleshooting**
 
-It's easier to troubleshoot configuration problems in Restic. For example, one of my manually-triggered backups took a lot longer than I expected. I was able to find out why using Restic's commands, and I wrote a script to make this easier: [wheelercj/find-restic-anchor: Find the largest files in your latest Restic backup](https://github.com/wheelercj/find-restic-anchor).
+It's easier to troubleshoot configuration problems in Restic. For example, one of my manually triggered backups took a lot longer than I expected. I was able to find out why using Restic's commands, and I wrote a script to make this easier: [wheelercj/find-restic-anchor: Find the largest files in your latest Restic backup](https://github.com/wheelercj/find-restic-anchor).
 
 ### Security
 
