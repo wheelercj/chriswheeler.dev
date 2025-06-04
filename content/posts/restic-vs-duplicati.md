@@ -1,6 +1,7 @@
 +++
 title = 'Restic vs. Duplicati'
 date = 2025-06-02T15:41:11-07:00
+lastmod = 2025-06-03T19:07:52-07:00
 tags = []
 +++
 
@@ -84,7 +85,7 @@ I'm not sure how meaningful this is, but it's interesting that [one of Google's 
 
 ## My experience
 
-I used Duplicati for several years and then switched to Restic in late 2024 because Duplicati does not have a Linux version and I had just switched from Windows 11 to Ubuntu 22.
+I used Duplicati for several years and then switched to Restic in late 2024 because I mistakenly believed Duplicati did not have a Linux version and I had just switched from Windows 11 to Ubuntu 22.
 
 During the years I used Duplicati, it saved my bacon multiple times. The only trouble I had with it besides a few small points described above was when I tried to back up to a Samba file server. For a few months of daily backups, everything seemed fine. Then, I suddenly got an error about the backups being corrupted or something to that effect. Duplicati's tool for fixing the backups wasn't able to save them, and online discussions about the problem said the backups were unrecoverable. I had to delete all the backups and start over. If I remember correctly, the problem was that Duplicati requires a lot of control over the metadata of the files it creates, but Samba changes file metadata to help with serving the files. Don't use Duplicati with a Samba file server! I don't know what would happen if you use Restic with a Samba file server.
 
