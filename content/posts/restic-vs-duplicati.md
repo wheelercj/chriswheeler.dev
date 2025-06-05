@@ -1,7 +1,7 @@
 +++
 title = 'Restic vs. Duplicati'
 date = 2025-06-02T15:41:11-07:00
-lastmod = 2025-06-03T23:09:46-07:00
+lastmod = 2025-06-04T18:37:23-07:00
 tags = []
 +++
 
@@ -46,31 +46,44 @@ Having includes and excludes files also makes it easier to detect when there are
 
 ```py
 import os
+from pathlib import Path
+
+
+restic_includes_path = Path.home() / "restic" / "includes.txt"
+restic_excludes_path = Path.home() / "restic" / "excludes.txt"
+
+folders_to_check: list[Path] = [
+    Path.home(),
+    Path.home() / ".config",
+]
 
 
 def check_restic_backup_config() -> None:
     print("Checking Restic backup configuration")
-    folders: list[str] = ["/home/chris", "/home/chris/.config"]
-
-    with open(restic_includes_path, "r", encoding="utf8") as file:
-        includes: list[str] = file.read().strip().splitlines()
-    with open(restic_excludes_path, "r", encoding="utf8") as file:
-        excludes: list[str] = file.read().strip().splitlines()
+    includes: list[str] = (
+        restic_includes_path.read_text(encoding="utf8").strip().splitlines()
+    )
+    excludes: list[str] = (
+        restic_excludes_path.read_text(encoding="utf8").strip().splitlines()
+    )
 
     found_count: int = 0
-    for folder in folders:
-        with os.scandir(folder) as it:
-            for entry in it:
-                if entry.path not in includes and entry.path not in excludes:
-                    print("\t" + entry.path)
-                    found_count += 1
+    for folder in folders_to_check:
+        for entry in folder.iterdir():
+            if str(entry) not in includes and str(entry) not in excludes:
+                print("\t" + str(entry))
+                found_count += 1
 
     if found_count > 0:
         print(
-            f"Found {found_count} files and/or folders that are not being backed up but maybe should be"
+            f"Found {found_count} files and/or folders that are not "
+            "being backed up but maybe should be"
         )
     else:
         print("The Restic config files look good")
+
+
+check_restic_backup_config()
 ```
 
 The function above is part of the script I described in [Why not cron on workstation](https://til.chriswheeler.dev/why-not-cron-on-workstation/).
