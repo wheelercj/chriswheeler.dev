@@ -1,7 +1,7 @@
 +++
 title = 'Restic vs. Duplicati'
 date = 2025-06-02T15:41:11-07:00
-lastmod = 2025-06-04T18:37:23-07:00
+lastmod = 2025-06-07T18:39:33-07:00
 tags = []
 +++
 
@@ -112,6 +112,7 @@ Both Restic and Duplicati are excellent choices. I recommend Restic for everyone
 
 - [Object lock with Restic](https://til.chriswheeler.dev/object-lock-with-restic/)
 - [2024 Hacker News discussion comparing backup software](https://news.ycombinator.com/item?id=39117155)
+- [2025 Hacker News discussion about append-only backups](https://news.ycombinator.com/item?id=44211612)
 
 {{< alert info >}}
 2025/6/3 correction: I was mistaken about Duplicati not having a Linux version. Duplicati runs on many distros.
