@@ -4,7 +4,7 @@ date = 2025-08-31T23:57:57-07:00
 tags = []
 +++
 
-During the time I've been making browser extensions, I've learned about the amazing things they can do and how helpful they are, but also how dangerous they can be and some ways to reduce the risks from using them. In this post, I'll cover some of these risks and ways to mitigate them.
+During the time I've been making browser extensions, I've learned about the amazing things they can do and how helpful they are, but also how dangerous they can be. Below are some examples of risks and ways to mitigate them.
 
 ## Some of the risks
 
