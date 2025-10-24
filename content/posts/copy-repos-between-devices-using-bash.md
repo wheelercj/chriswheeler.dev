@@ -1,7 +1,7 @@
 +++
 title = 'Copy repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2025-10-23T21:53:12-07:00
+lastmod = 2025-10-23T23:00:19-07:00
 tags = []
 +++
 
@@ -24,7 +24,7 @@ my-cp-repo() {
         return
     fi
 
-    rsync --recursive --compress --rsh=ssh \
+    rsync --recursive --compress --rsh=ssh --perms --times --group \
         --exclude-from=<(git -C $1 ls-files --exclude-standard --others --ignored --directory) \
         $1 $2
 }
@@ -36,6 +36,9 @@ I learned most of how to write this by combining a few answers in [this StackOve
 - `--recursive` recursively copies all directories
 - `--compress` compresses the data before sending, making the transfer significantly faster
 - `--rsh=ssh` tells rsync to make the connection over SSH to ensure encryption
+- `--perms` preserves permissions
+- `--times` preserves modification times
+- `--group` preserves group
 - `--exclude-from` makes rsync ignore files & folders listed in a file
 - `<(command)` is a [process substitution](https://www.gnu.org/software/bash/manual/html_node/Process-Substitution.html); it's replaced by the name of a file containing the command's output
 
