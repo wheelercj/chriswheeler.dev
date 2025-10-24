@@ -1,6 +1,7 @@
 +++
 title = 'Copy repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
+lastmod = 2025-10-23T21:53:12-07:00
 tags = []
 +++
 
@@ -12,7 +13,7 @@ I named the alias `,cp-repo` (copy repo):
 ,cp-repo . staging:/home/chris/repos/url-shortener
 ```
 
-This copies the current directory (`.`) to `/home/chris/repos/url-shortener` in a machine named `staging` as defined in an SSH config file. The first argument is the source, and the second is the destination. Files and folders ignored by Git are not copied.
+This copies the current directory (`.`) to `/home/chris/repos/url-shortener` in a machine named `staging` as defined in an SSH config file. The first argument is the source, and the second is the destination. Files and folders ignored by Git are not copied. This command can also be used to make a local copy of a local repo by not specifying any remote host.
 
 Here's the `,cp-repo` definition:
 
