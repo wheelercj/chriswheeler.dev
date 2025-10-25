@@ -1,13 +1,13 @@
 +++
 title = 'Copy repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2025-10-23T23:00:19-07:00
+lastmod = 2025-10-24T18:18:14-07:00
 tags = []
 +++
 
-Sometimes it's helpful to copy a Git repository directly from one machine to another without using a Git host like GitHub. If you can SSH into the machine(s) involved, you can use Bash's `rsync` command. Rsync's defaults aren't great for copying repos for several reasons, but you can add an alias to your `~/.bashrc` to fix that.
+Sometimes it's helpful to copy a Git repository directly from one machine to another without using a Git host like GitHub. If you can SSH into the machine(s) involved, you can use Bash's `rsync` command. Rsync's defaults aren't great for copying repos for several reasons, but a Bash script can fix that.
 
-I named the alias `,cp-repo` (copy repo):
+I named the script `,cp-repo` (copy repo):
 
 ```bash
 ,cp-repo . staging:/home/chris/repos/url-shortener
@@ -15,20 +15,20 @@ I named the alias `,cp-repo` (copy repo):
 
 This copies the current directory (`.`) to `/home/chris/repos/url-shortener` in a machine named `staging` as defined in an SSH config file. The first argument is the source, and the second is the destination. Files and folders ignored by Git are not copied. This command can also be used to make a local copy of a local repo by not specifying any remote host.
 
-Here's the `,cp-repo` definition:
+Here's the contents of my `,cp-repo` file:
 
 ```bash
-my-cp-repo() {
-    if [[ $# -ne 2 ]]; then
-        echo "Error: enter the source and destination"
-        return
-    fi
+#!/usr/bin/env bash
+set -euo pipefail
 
-    rsync --recursive --compress --rsh=ssh --perms --times --group \
-        --exclude-from=<(git -C $1 ls-files --exclude-standard --others --ignored --directory) \
-        $1 $2
-}
-alias ,cp-repo=my-cp-repo
+if [[ $# -ne 2 ]]; then
+    echo "Error: expected two arguments: source and destination"
+    exit 1
+fi
+
+rsync --recursive --compress --rsh=ssh --perms --times --group \
+    --exclude-from=<(git -C $1 ls-files --exclude-standard --others --ignored --directory) \
+    $1 $2
 ```
 
 I learned most of how to write this by combining a few answers in [this StackOverflow discussion](https://stackoverflow.com/questions/13713101/rsync-exclude-according-to-gitignore-hgignore-svnignore-like-filter-c).
