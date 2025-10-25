@@ -1,7 +1,7 @@
 +++
 title = 'Copy repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2025-10-25T11:10:30-07:00
+lastmod = 2025-10-25T11:11:30-07:00
 tags = []
 +++
 
@@ -20,6 +20,11 @@ Here's the contents of my `,cp-repo` file:
 ```bash
 #!/usr/bin/env bash
 set -euo pipefail
+
+# Copies a Git repo either locally or to/from another machine.
+# Arguments: source and destination. Files and folders ignored by Git
+# are not copied.
+# https://chriswheeler.dev/posts/copy-repos-between-devices-using-bash/
 
 if [ $# -ne 2 ]; then
     echo "Error: expected two arguments: source and destination" >&2
