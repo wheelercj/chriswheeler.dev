@@ -1,7 +1,7 @@
 +++
 title = 'Copy repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2025-10-24T21:17:23-07:00
+lastmod = 2025-10-25T00:12:02-07:00
 tags = []
 +++
 
@@ -22,7 +22,7 @@ Here's the contents of my `,cp-repo` file:
 set -euo pipefail
 
 if [[ $# -ne 2 ]]; then
-    echo "Error: expected two arguments: source and destination"
+    >&2 echo "Error: expected two arguments: source and destination"
     exit 1
 fi
 
