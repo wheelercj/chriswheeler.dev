@@ -1,7 +1,7 @@
 +++
 title = 'Copy repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2025-10-24T18:18:14-07:00
+lastmod = 2025-10-24T21:17:23-07:00
 tags = []
 +++
 
@@ -27,8 +27,8 @@ if [[ $# -ne 2 ]]; then
 fi
 
 rsync --recursive --compress --rsh=ssh --perms --times --group \
-    --exclude-from=<(git -C $1 ls-files --exclude-standard --others --ignored --directory) \
-    $1 $2
+    --exclude-from=<(git -C "$1" ls-files --exclude-standard --others --ignored --directory) \
+    "$1" "$2"
 ```
 
 I learned most of how to write this by combining a few answers in [this StackOverflow discussion](https://stackoverflow.com/questions/13713101/rsync-exclude-according-to-gitignore-hgignore-svnignore-like-filter-c).
