@@ -42,7 +42,7 @@ I learned most of how to write this by combining a few answers in [this StackOve
 - `--exclude-from` makes rsync ignore files & folders listed in a file
 - `<(command)` is a [process substitution](https://www.gnu.org/software/bash/manual/html_node/Process-Substitution.html); it's replaced by the name of a file containing the command's output
 
-- `git -C $1` runs the Git command in the folder specified by `$1`
-- `git -C $1 ls-files --exclude-standard --others --ignored --directory` lists all files and folders in the repo that are being ignored by Git
+- `git -C "$1"` runs the Git command in the folder specified by `$1`
+- `git -C "$1" ls-files --exclude-standard --others --ignored --directory` lists all files and folders in the repo that are being ignored by Git
 
 I chose to start the `,cp-repo` command's name with a comma because that makes it much less likely to conflict with future commands as explained in [Start all of your commands with a comma](https://rhodesmill.org/brandon/2009/commands-with-comma/).
