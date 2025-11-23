@@ -1,6 +1,7 @@
 +++
 title = 'Exit in Python'
 date = 2025-11-22T21:29:53-08:00
+lastmod = 2025-11-23T12:19:23-08:00
 tags = []
 +++
 
@@ -20,7 +21,47 @@ The `SystemExit` exception is derived from `BaseException`, not `Exception`, so 
 
 Exiting by raising an exception is important for many reasons including making code easier to test. However, there are rare cases where a program should be exited immediately without raising an exception. In those cases, you can use the [`os._exit`](https://docs.python.org/3/library/os.html#os._exit) function.
 
+## CLI parsing libraries
+
 CLI parsing libraries often have their own functions or exceptions for exiting. Some of them print extra info such as the CLI's usage message.
 
 - [argparse's exit functions](https://docs.python.org/3/library/argparse.html#exiting-methods)
 - [click's exit exceptions](https://click.palletsprojects.com/en/stable/api/#exceptions)
+
+### click.ClickException
+
+`raise click.ClickException("your error message here")`
+
+result:
+
+```
+Error: your error message here
+```
+
+### click.BadOptionUsage
+
+`raise click.BadOptionUsage("option_name_here", "your error message here")`
+
+result:
+
+```
+Usage: deploy [OPTIONS]
+Try 'deploy --help' for help.
+
+Error: your error message here
+```
+
+### click.BadArgumentUsage
+
+`raise click.BadArgumentUsage("your error message here")`
+
+result:
+
+```
+Usage: deploy [OPTIONS]
+Try 'deploy --help' for help.
+
+Error: your error message here
+```
+
+Click has a few other exception types that you probably won't use directly.
