@@ -28,6 +28,9 @@ CLI parsing libraries often have their own functions or exceptions for exiting. 
 - [argparse's exit functions](https://docs.python.org/3/library/argparse.html#exiting-methods)
 - [click's exit exceptions](https://click.palletsprojects.com/en/stable/api/#exceptions)
 
+> [!warning]
+> Click's exit exceptions are derived from `Exception`.
+
 ### click.ClickException
 
 `raise click.ClickException("your error message here")`
