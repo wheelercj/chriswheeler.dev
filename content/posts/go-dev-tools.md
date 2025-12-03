@@ -1,7 +1,7 @@
 +++
 title = 'Go dev tools'
 date = 2024-07-02T01:14:26-07:00
-lastmod = 2024-12-05T09:46:06-08:00
+lastmod = 2025-12-02T20:41:18-08:00
 tags = []
 ShowToc = true
 TocOpen = true
@@ -114,6 +114,10 @@ A goroutine leak detector created by Uber.
 `go install golang.org/x/tools/cmd/deadcode@latest`
 
 Find unreachable functions. This tool never accidentally says a reachable function is unreachable, unless it's only called from code not written in Go. Its creators "run deadcode periodically on our projects, especially after refactoring work, to help identify parts of the program that are no longer needed."
+
+**[staticcheck](https://staticcheck.dev/)**
+
+A linter that finds bugs, performance issues, unnecessarily complicated code, and style inconsistencies. Staticcheck is probably installed by default in your Go dev setup.
 
 ## Database tools
 
