@@ -121,7 +121,8 @@ A linter that finds bugs, performance issues, unnecessarily complicated code, an
 
 ## Database tools
 
-[Go Wiki: SQL Database Drivers](https://go.dev/wiki/SQLDrivers)
+- [Go Wiki: SQL Database Drivers](https://go.dev/wiki/SQLDrivers)
+- [Benchmarks for SQLite drivers](https://github.com/cvilsmeier/go-sqlite-bench)
 
 **[pgx](https://github.com/jackc/pgx)**
 
