@@ -1,7 +1,7 @@
 +++
 title = 'Go dev tools'
 date = 2024-07-02T01:14:26-07:00
-lastmod = 2025-12-02T20:41:18-08:00
+lastmod = 2025-12-02T23:05:52-08:00
 tags = []
 ShowToc = true
 TocOpen = true
@@ -121,8 +121,7 @@ A linter that finds bugs, performance issues, unnecessarily complicated code, an
 
 ## Database tools
 
-- [Go Wiki: SQL Database Drivers](https://go.dev/wiki/SQLDrivers)
-- [Benchmarks for SQLite drivers](https://github.com/cvilsmeier/go-sqlite-bench)
+[Go Wiki: SQL Database Drivers](https://go.dev/wiki/SQLDrivers)
 
 **[pgx](https://github.com/jackc/pgx)**
 
@@ -147,6 +146,24 @@ Generate type-safe code from SQL. This tool writes most of the database-related 
 `go install github.com/pressly/goose/v3/cmd/goose@latest`
 
 A database migration tool that supports SQL migrations and Go functions.
+
+### SQLite
+
+[Benchmarks for SQLite drivers](https://github.com/cvilsmeier/go-sqlite-bench)
+
+[Go Wiki: SQL Database Drivers](https://go.dev/wiki/SQLDrivers) lists several SQLite drivers, but I'll focus on just a few:
+
+**[mattn/go-sqlite3](https://pkg.go.dev/github.com/mattn/go-sqlite3)**
+
+Mattn's SQLite driver for Go seems to be the most widely used one, but it uses CGo which can get in the way of creating a statically-linked binary, if that is desired.
+
+**[modernc.org/sqlite](https://pkg.go.dev/modernc.org/sqlite)**
+
+Modernc's driver doesn't use CGo; it's a port of the C SQLite3 library in pure Go.
+
+**[ncruces/go-sqlite3](https://pkg.go.dev/github.com/ncruces/go-sqlite3)**
+
+Nuno Cruces' driver is also pure Go, but it also uses WebAssembly which makes the driver compatible with more platforms and may improve maintainability and memory safety, but probably decreases performance.
 
 ## HTTP routers
 
