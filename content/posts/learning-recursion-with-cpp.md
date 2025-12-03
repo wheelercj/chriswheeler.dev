@@ -1,7 +1,7 @@
 +++
 title = 'Learning recursion with C++'
 date = 2022-05-02T23:23:49-08:00
-lastmod = 2024-12-06T00:37:56-08:00
+lastmod = 2025-12-03T01:01:07-08:00
 tags = []
 +++
 
@@ -359,7 +359,7 @@ As you can see by comparing the samples above, using iterative loops is only sli
 
 It's never impossible to implement something with iteration that is significantly easier to implement with recursion. After all, programming languages that allow recursion must themselves implement recursion somehow. They do that using iteration. (The exception is that, as mentioned above, some languages don't have iterative loops.)
 
-As an example of how much easier recursion can be, below is a function written in Java that creates a random binary tree (you can [see the definition of `Node` here](https://mystb.in/BoringRomanCharts)).
+As an example of how much easier recursion can be, below is a function written in Java that creates a random binary tree.
 
 ```java
 public Node randomTree() {
@@ -369,7 +369,88 @@ public Node randomTree() {
 }
 ```
 
-[The iterative equivalent](https://mystb.in/CompanyAnalogChile) of this function is about 40 lines long. However, a large part of why it's so much longer iteratively in this particular case is because there happened to be a requirement that the `Node` variables in the `Node` class be `final`.
+{{< safeHtml >}}
+<details>
+<summary>Click here to show/hide the iterative equivalent.</summary>
+{{< /safeHtml >}}
+```java
+public <A> Tree<A> getRandomTree() {
+    // Generates a random binary tree and returns the tree's root and depth.
+    // May generate a tree with no nodes, in which case the root is null and the depth is 0.
+    // The tree is built from the bottom up without using recursion.
+    var roots = new ArrayList<Node<Integer>>();
+    for (int i = 0; i < getRandomInt(0, 100); i++)
+        roots.add(new Node(getRandomInt(0, 100), null, null));
+    if (roots.isEmpty())
+        return new Tree(0, null);
+    int depth = 1;
+    for (; roots.size() > 1; depth++) {
+        // Each iteration of this loop adds one level to the tree.
+        // Each level must have at least half rounded up as many nodes as there were on the level below.
+        // A level could have more nodes than the level below it, but usually won't.
+        Collections.shuffle(roots);
+        var newRoots = new ArrayList<Node<Integer>>();
+        while (!roots.isEmpty()) {
+            // Each iteration of this loop adds one node to the level.
+            int childCount = 1;
+            if (roots.size() > 1) {
+                childCount = getRandomInt(0, 4);
+                if (childCount >= 2)
+                    childCount = 2;
+            }
+            if (childCount == 0)
+                newRoots.add(new Node(getRandomInt(0, 100), null, null));
+            else if (childCount == 2)
+                newRoots.add(new Node(getRandomInt(0, 100), roots.remove(0), roots.remove(0)));
+            else {
+                if (getRandomInt(0, 1) == 0)
+                    newRoots.add(new Node(getRandomInt(0, 100), roots.remove(0), null));
+                else
+                    newRoots.add(new Node(getRandomInt(0, 100), null, roots.remove(0)));
+            }
+        }
+        roots = new ArrayList<>(newRoots);
+        newRoots.clear();
+    }
+    return new Tree(depth, roots.get(0));
+}
+```
+{{< safeHtml >}}
+</details>
+{{< /safeHtml >}}
+
+{{< safeHtml >}}
+<br />
+{{< /safeHtml >}}
+
+{{< safeHtml >}}
+<details>
+<summary>Click here to show/hide the definition of the Node class.</summary>
+{{< /safeHtml >}}
+```java
+public class Node<A> {
+    public final A contents;
+    public final Node<A> left;
+    public final Node<A> right;
+
+    public Node(final A contents,
+                final Node<A> left,
+                final Node<A> right) {
+        this.contents = contents;
+        this.left = left;
+        this.right = right;
+    }
+}
+```
+{{< safeHtml >}}
+</details>
+{{< /safeHtml >}}
+
+{{< safeHtml >}}
+<br />
+{{< /safeHtml >}}
+
+The iterative version is about 40 lines long. However, a large part of why it's so much longer iteratively in this particular case is because there happened to be a requirement that the `Node` variables in the `Node` class be `final`.
 
 Some programming languages have more sophisticated recursion implementations than others, especially languages that depend on recursion more. For example, some programming languages have [tail-call optimization](https://en.wikipedia.org/wiki/Tail_call), with which recursive functions that have their recursive call as the last action of the function (tail-call) will, when compiled, be automatically changed to use iteration instead of recursion. This optimization can reduce memory use and prevent stack overflow errors. The link above includes a list of languages and whether they have tail-call optimization.
 
