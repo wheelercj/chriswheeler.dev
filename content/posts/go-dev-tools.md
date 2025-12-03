@@ -1,7 +1,7 @@
 +++
 title = 'Go dev tools'
 date = 2024-07-02T01:14:26-07:00
-lastmod = 2025-12-02T23:05:52-08:00
+lastmod = 2025-12-02T23:31:52-08:00
 tags = []
 ShowToc = true
 TocOpen = true
@@ -149,7 +149,10 @@ A database migration tool that supports SQL migrations and Go functions.
 
 ### SQLite
 
-[Benchmarks for SQLite drivers](https://github.com/cvilsmeier/go-sqlite-bench)
+Benchmarks for SQLite drivers:
+
+- [modernc.org's](https://pkg.go.dev/modernc.org/sqlite-bench)
+- [Christoph Vilsmeier's](https://github.com/cvilsmeier/go-sqlite-bench)
 
 [Go Wiki: SQL Database Drivers](https://go.dev/wiki/SQLDrivers) lists several SQLite drivers, but I'll focus on just a few:
 
