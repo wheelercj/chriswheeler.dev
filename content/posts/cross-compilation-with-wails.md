@@ -1,6 +1,7 @@
 +++
 title = "Cross-compilation with Wails"
 date = 2025-12-10T16:49:19-08:00
+lastmod = 2025-12-12T18:07:36-08:00
 tags = []
 +++
 
@@ -22,11 +23,47 @@ build
     └── my-app-linux-amd64
 ```
 
-With that, we already have self-contained executables and installers for Linux and Windows! I didn't include MacOS in the list of platforms because Apple generally does not allow cross-compilation. I don't think there's anything Wails or Go can do about that. (When I include darwin in the list, the platform is skipped with the message `WARNING  Crosscompiling to Mac not currently supported`.)
+With that, we already have executables and installers for Linux and Windows! I didn't include MacOS in the list of platforms because Apple generally does not allow cross-compilation. I don't think there's anything Wails or Go can do about that. (When I include darwin in the list, the platform is skipped with the message `WARNING  Crosscompiling to Mac not currently supported`.)
 
 When I accidentally included a platform that doesn't exist, I got a helpful message that included this:
 
     Supported platforms: darwin,darwin/amd64,darwin/arm64,darwin/universal,linux,linux/amd64,linux/arm64,linux/arm,windows,windows/amd64,windows/arm64,windows/386
+
+## Are they statically linked?
+
+According to Linux's `ldd` command (which prints shared object dependencies), the Windows executables and installers are statically linked and the Linux one is dynamically linked:
+
+```
+$ ldd build/bin/*
+build/bin/my-app-386.exe:
+	not a dynamic executable
+build/bin/my-app-amd64.exe:
+	not a dynamic executable
+build/bin/my-app-amd64-installer.exe:
+	not a dynamic executable
+build/bin/my-app-arm64.exe:
+	not a dynamic executable
+build/bin/my-app-arm64-installer.exe:
+	not a dynamic executable
+build/bin/my-app-linux-amd64:
+	linux-vdso.so.1 (0x00007ffdbe4c7000)
+	libglib-2.0.so.0 => /lib/x86_64-linux-gnu/libglib-2.0.so.0 (0x000079e7a3ff0000)
+	libwebkit2gtk-4.0.so.37 => /lib/x86_64-linux-gnu/libwebkit2gtk-4.0.so.37 (0x000079e7a0400000)
+	libgtk-3.so.0 => /lib/x86_64-linux-gnu/libgtk-3.so.0 (0x000079e79fc00000)
+    ...
+```
+
+The `file` command confirms this:
+
+```
+$ file build/bin/*
+build/bin/my-app-386.exe:             PE32 executable (GUI) Intel 80386, for MS Windows, 7 sections
+build/bin/my-app-amd64.exe:           PE32+ executable (GUI) x86-64, for MS Windows, 9 sections
+build/bin/my-app-amd64-installer.exe: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows, Nullsoft Installer self-extracting archive, 7 sections
+build/bin/my-app-arm64.exe:           PE32+ executable (GUI) Aarch64, for MS Windows, 7 sections
+build/bin/my-app-arm64-installer.exe: PE32 executable (GUI) Intel 80386 (stripped to external PDB), for MS Windows, Nullsoft Installer self-extracting archive, 7 sections
+build/bin/my-app-linux-amd64:         ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=8ce9189206c3fc10a0fdfb874b0a5cd7b5f61ec7, for GNU/Linux 3.2.0, stripped
+```
 
 ## What about `linux/arm64`?
 
