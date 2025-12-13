@@ -65,6 +65,15 @@ build/bin/my-app-arm64-installer.exe: PE32 executable (GUI) Intel 80386 (strippe
 build/bin/my-app-linux-amd64:         ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=8ce9189206c3fc10a0fdfb874b0a5cd7b5f61ec7, for GNU/Linux 3.2.0, stripped
 ```
 
+I tried to force static linking for the Linux executable by using `-ldflags '-extldflags "-static"'`, but I got many errors including:
+
+```
+/usr/bin/ld: /tmp/go-link-3304063632/000004.o: in function `_cgo_77133bf98b3a_C2func_getaddrinfo':
+/tmp/go-build/cgo_unix_cgo.cgo2.c:60:(.text+0x37): warning: Using 'getaddrinfo' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
+```
+
+There may still be a way to force static linking for the Linux executable, but I'm not aware of it yet.
+
 ## What about `linux/arm64`?
 
 Unfortunately, cross-compiling from `linux/amd64` to `linux/arm64` doesn't work right now (see output below). I searched Wails' repo and found others have the same problem. There doesn't seem to be a workaround. Here's the output:
