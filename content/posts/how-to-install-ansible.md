@@ -9,5 +9,3 @@ Here's a way to install Ansible that's easier than [the official instructions](h
 `uv tool install ansible-core` (requires [uv](https://docs.astral.sh/uv/))
 
 That's it. You should now be able to use commands such as `ansible`, `ansible-playbook`, etc.
-
-I don't know why the official instructions have so many suggestions that just end in error messages on most systems.
