@@ -80,10 +80,7 @@ PDFs are not just static files. They can contain code. For example, someone buil
 
 ## Automation
 
-* [ImageMagick](https://imagemagick.org/script/formats.php) is a suite of command line tools.
-* [OpenPDF](https://github.com/LibrePDF/OpenPDF) is a Java library.
-* [Apache PDFBox](https://en.wikipedia.org/wiki/Apache_PDFBox)
-* [QPDF](https://en.wikipedia.org/wiki/QPDF)
+* [PDF generators](/posts/pdf-generators)
 
 ## Collections
 
