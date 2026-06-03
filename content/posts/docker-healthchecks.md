@@ -6,8 +6,8 @@ tags = []
 
 Whether a Docker container is healthy is not just about whether it's running. A service could stop working properly without crashing. Docker can detect some of those kinds of invalid states when we define custom healthchecks.
 
-- [`healthcheck` in Docker Compose \| Docker Docs](https://docs.docker.com/reference/compose-file/services/)
-- [`HEALTHCHECK` in Dockerfile \| Docker Docs](https://docs.docker.com/reference/dockerfile/)
+- [`healthcheck` in Docker Compose \| Docker Docs](https://docs.docker.com/reference/compose-file/services/#healthcheck)
+- [`HEALTHCHECK` in Dockerfile \| Docker Docs](https://docs.docker.com/reference/dockerfile/#healthcheck)
 
 The way it works is you define a command for Docker to periodically run inside the container, and Docker uses that command's exit code to determine whether the service is healthy.
 
