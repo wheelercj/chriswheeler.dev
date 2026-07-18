@@ -107,6 +107,8 @@ except subprocess.TimeoutExpired:
         "restic snapshots timed out. Maybe resticprofile made restic "
         "cache files with the wrong owner?"
     )
+except subprocess.CalledProcessError as err:
+    print(err.stderr)
 ```
 
 Notice in the example above how you can pass a dictionary to the `env` parameter when a command needs environment variables.
