@@ -1,7 +1,7 @@
 +++
 title = 'PDF tools'
 date = 2024-05-09T12:22:27-07:00
-lastmod = 2025-05-03T21:47:34-07:00
+lastmod = 2026-07-18T16:12:11-07:00
 tags = []
 +++
 
@@ -77,6 +77,8 @@ PDFs are not just static files. They can contain code. For example, someone buil
 * [here's an HN discussion](https://news.ycombinator.com/item?id=41377960) that lists various tools for analyzing PDFs, such as to look for malicious code.
 * [Canarytokens.org](https://canarytokens.org/nest/) can create PDFs and many other things that notify you when they're opened by certain applications to help you detect security breaches.
 * [Submit a file for malware analysis \| Microsoft Security Intelligence](https://www.microsoft.com/en-us/wdsi/filesubmission). Use this for files that you believe are malware or are incorrectly classified as malware by Windows Defender.
+* [PDFSyntax](https://news.ycombinator.com/item?id=43000303) creates an HTML visualization of a PDF file's internal structure.
+* [IPA](https://news.ycombinator.com/item?id=41377960) is a GUI for exploring inner details of PDFs.
 
 ## Automation
 
