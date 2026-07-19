@@ -122,7 +122,7 @@ import subprocess
 if shutil.which("brew"):
     subprocess.run(["brew", "upgrade"], check=True)
 
-gh_exe_path: str = shutil.which("gh")
+gh_exe_path: str | None = shutil.which("gh")
 ```
 
 That covers most use cases of subprocess, but there's so much more you can do. Further reading:
