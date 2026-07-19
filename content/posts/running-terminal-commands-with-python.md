@@ -90,7 +90,7 @@ subprocess.run(
 
 If you do use `shell=True`, put the entire command in one string instead of a list of strings.
 
-Any command that might get stuck should probably use a timeout. The `timeout` parameter is in seconds and can take an int or a float.
+Any command that might get stuck should probably use a timeout. The `timeout` argument is in seconds and can take an int or a float.
 
 ```py
 try:
@@ -111,7 +111,7 @@ except subprocess.CalledProcessError as err:
     print(err.stderr)
 ```
 
-Notice in the example above how you can pass a dictionary to the `env` parameter when a command needs environment variables.
+Notice in the example above how you can pass a dictionary to the `env` argument when a command needs environment variables.
 
 The subprocess module is great, but sometimes Python has an easier way to do things. For example, to check whether a command exists or get its executable's path, you can use `shutil.which`:
 
@@ -125,7 +125,7 @@ if shutil.which("brew"):
 gh_exe_path: str | None = shutil.which("gh")
 ```
 
-That covers most use cases of subprocess, but there's so much more you can do. Further reading:
+That covers many use cases of subprocess, but there's so much more you can do. Further reading:
 
 - [subprocess — Subprocess management](https://docs.python.org/3/library/subprocess.html)
 - [shutil — High-level file operations](https://docs.python.org/3/library/shutil.html)
