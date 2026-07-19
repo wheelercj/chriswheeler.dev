@@ -1,6 +1,7 @@
 +++
 title = 'Running terminal commands with Python'
 date = 2026-07-18T11:37:28-07:00
+lastmod = 2026-07-19T16:21:43-07:00
 tags = []
 +++
 
@@ -61,6 +62,20 @@ def is_docker_daemon_running() -> bool:
         return True
     except subprocess.CalledProcessError:
         return False
+```
+
+The output of one command can be piped into another with the `input` argument:
+
+```py
+ls_result = subprocess.run(["ls"], check=True, capture_output=True, text=True)
+grep_result = subprocess.run(
+    ["grep", "py"],
+    check=True,
+    input=ls_result.stdout,
+    capture_output=True,
+    text=True,
+)
+print(grep_result.stdout)
 ```
 
 Of course, you can use variables in the command. If you don't use `shell=True`, you're safe from shell injection attacks because the shell is bypassed.
