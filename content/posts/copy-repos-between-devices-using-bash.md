@@ -1,7 +1,7 @@
 +++
 title = 'Copy repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2025-10-25T11:11:30-07:00
+lastmod = 2026-07-20T13:47:30-07:00
 tags = []
 +++
 
@@ -21,19 +21,34 @@ Here's the contents of my `,cp-repo` file:
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Copies a Git repo either locally or to/from another machine.
-# Arguments: source and destination. Files and folders ignored by Git
-# are not copied.
+# Copies a Git repo either locally or to/from another machine. Files and
+# folders ignored by Git are not copied.
 # https://chriswheeler.dev/posts/copy-repos-between-devices-using-bash/
 
 if [ $# -ne 2 ]; then
-    echo "Error: expected two arguments: source and destination" >&2
+    echo "Usage: $0 <source_repo> <destination>" >&2
     exit 1
 fi
 
+SRC="$1"
+DEST="$2"
+
+# get a list of files and folders ignored by git
+EXCLUDES_FILE="$(mktemp)"
+trap 'rm -f $EXCLUDES_FILE' EXIT
+if [[ "$SRC" =~ ^([^:]+):(.+)$ ]]; then
+    # SRC is remote
+    HOST="${BASH_REMATCH[1]}"
+    REMOTE_PATH="${BASH_REMATCH[2]}"
+    ssh "$HOST" "git -C \"$REMOTE_PATH\" ls-files --exclude-standard --others --ignored --directory" > "$EXCLUDES_FILE"
+else
+    # SRC is local
+    git -C "$SRC" ls-files --exclude-standard --others --ignored --directory > "$EXCLUDES_FILE"
+fi
+
 rsync --recursive --compress --rsh=ssh --perms --times --group \
-    --exclude-from=<(git -C "$1" ls-files --exclude-standard --others --ignored --directory) \
-    "$1" "$2"
+    --exclude-from="$EXCLUDES_FILE" \
+    "$SRC/" "$DEST"
 ```
 
 I learned most of how to write this by combining a few answers in [this StackOverflow discussion](https://stackoverflow.com/questions/13713101/rsync-exclude-according-to-gitignore-hgignore-svnignore-like-filter-c).
@@ -45,9 +60,8 @@ I learned most of how to write this by combining a few answers in [this StackOve
 - `--times` preserves modification times
 - `--group` preserves group
 - `--exclude-from` makes rsync ignore files & folders listed in a file
-- `<(command)` is a [process substitution](https://www.gnu.org/software/bash/manual/html_node/Process-Substitution.html); it's replaced by the name of a file containing the command's output
 
-- `git -C "$1"` runs the Git command in the folder specified by `$1`
-- `git -C "$1" ls-files --exclude-standard --others --ignored --directory` lists all files and folders in the repo that are being ignored by Git
+- `git -C "$SRC"` runs the Git command in the folder specified by `$SRC`
+- `git -C "$SRC" ls-files --exclude-standard --others --ignored --directory` lists all files and folders in the repo that are being ignored by Git
 
 I chose to start the `,cp-repo` command's name with a comma because that makes it much less likely to conflict with future commands as explained in [Start all of your commands with a comma](https://rhodesmill.org/brandon/2009/commands-with-comma/).
