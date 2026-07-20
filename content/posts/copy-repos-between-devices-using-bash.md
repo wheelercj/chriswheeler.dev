@@ -1,7 +1,7 @@
 +++
 title = 'Copy repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2026-07-20T13:47:30-07:00
+lastmod = 2026-07-20T14:12:37-07:00
 tags = []
 +++
 
@@ -21,8 +21,8 @@ Here's the contents of my `,cp-repo` file:
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Copies a Git repo either locally or to/from another machine. Files and
-# folders ignored by Git are not copied.
+# Copies a git repo either locally or to/from another machine. Files and
+# folders ignored by git are not copied.
 # https://chriswheeler.dev/posts/copy-repos-between-devices-using-bash/
 
 if [ $# -ne 2 ]; then
@@ -40,10 +40,11 @@ if [[ "$SRC" =~ ^([^:]+):(.+)$ ]]; then
     # SRC is remote
     HOST="${BASH_REMATCH[1]}"
     REMOTE_PATH="${BASH_REMATCH[2]}"
-    ssh "$HOST" "git -C \"$REMOTE_PATH\" ls-files --exclude-standard --others --ignored --directory" > "$EXCLUDES_FILE"
+    # shellcheck disable=SC2029
+    ssh "$HOST" "cd \"$REMOTE_PATH\" && git ls-files --exclude-standard --others --ignored --directory" > "$EXCLUDES_FILE"
 else
     # SRC is local
-    git -C "$SRC" ls-files --exclude-standard --others --ignored --directory > "$EXCLUDES_FILE"
+    (cd "$SRC" && git ls-files --exclude-standard --others --ignored --directory) > "$EXCLUDES_FILE"
 fi
 
 rsync --recursive --compress --rsh=ssh --perms --times --group \
@@ -61,7 +62,6 @@ I learned most of how to write this by combining a few answers in [this StackOve
 - `--group` preserves group
 - `--exclude-from` makes rsync ignore files & folders listed in a file
 
-- `git -C "$SRC"` runs the Git command in the folder specified by `$SRC`
-- `git -C "$SRC" ls-files --exclude-standard --others --ignored --directory` lists all files and folders in the repo that are being ignored by Git
+`git ls-files --exclude-standard --others --ignored --directory` lists all files and folders in the repo that are being ignored by Git.
 
 I chose to start the `,cp-repo` command's name with a comma because that makes it much less likely to conflict with future commands as explained in [Start all of your commands with a comma](https://rhodesmill.org/brandon/2009/commands-with-comma/).
