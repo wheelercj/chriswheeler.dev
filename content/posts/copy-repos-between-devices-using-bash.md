@@ -90,7 +90,7 @@ fi
 
 rsync --recursive --compress --rsh=ssh --perms --times --group \
     --exclude-from="$EXCLUDES_FILE" \
-    "$SRC/" "$DEST"
+    "$SRC" "$DEST"
 ```
 
 I learned a lot of how to write this by combining a few answers in [this StackOverflow discussion](https://stackoverflow.com/questions/13713101/rsync-exclude-according-to-gitignore-hgignore-svnignore-like-filter-c).
