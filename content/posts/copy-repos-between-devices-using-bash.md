@@ -1,7 +1,7 @@
 +++
 title = 'Copy repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2026-07-20T14:12:37-07:00
+lastmod = 2026-07-21T12:29:27-07:00
 tags = []
 +++
 
@@ -33,6 +33,47 @@ fi
 SRC="$1"
 DEST="$2"
 
+if [ -z "$SRC" ]; then
+    echo 'Error: source cannot be empty' >&2
+    exit 1
+elif [ -z "$DEST" ]; then
+    echo 'Error: destination cannot be empty' >&2
+    exit 1
+fi
+
+# try to make sure the destination is not a root folder or a home folder
+if [[ "$DEST" =~ \.\. ]]; then
+    echo 'Error: destination cannot contain ".."' >&2
+    exit 1
+fi
+if [[ "$DEST" =~ ^([^:]+):(.*)$ ]]; then
+    # DEST is remote
+    DEST_PATH="${BASH_REMATCH[2]}"
+else
+    # DEST is local
+    DEST_PATH="$DEST"
+fi
+if [ -z "$DEST_PATH" ]; then
+    echo 'Error: destination path cannot be empty' >&2
+    exit 1
+elif [[ "$DEST_PATH" =~ ^/+\.?/*$ ]]; then
+    echo 'Error: destination path cannot be a root folder' >&2
+    exit 1
+elif [[ "$DEST_PATH" =~ ^~/*$ || "$DEST_PATH" =~ ^/(home|Users)/[^/]+/*$ ]]; then
+    echo 'Error: destination path cannot be a home folder' >&2
+    exit 1
+elif [[ "$DEST" == "$DEST_PATH" && "$DEST_PATH" != /* ]]; then
+    # DEST is local and DEST_PATH is relative
+    CURRENT_DIR="$(pwd)"
+    if [[ "$CURRENT_DIR" == '/' ]]; then
+        echo 'Error: destination path cannot be relative to the root folder' >&2
+        exit 1
+    elif [[ "$DEST_PATH" =~ ^\./*$ && "$CURRENT_DIR" =~ ^/(home|Users)/[^/]+$ ]]; then
+        echo 'Error: destination path cannot be a home folder' >&2
+        exit 1
+    fi
+fi
+
 # get a list of files and folders ignored by git
 EXCLUDES_FILE="$(mktemp)"
 trap 'rm -f $EXCLUDES_FILE' EXIT
@@ -52,7 +93,7 @@ rsync --recursive --compress --rsh=ssh --perms --times --group \
     "$SRC/" "$DEST"
 ```
 
-I learned most of how to write this by combining a few answers in [this StackOverflow discussion](https://stackoverflow.com/questions/13713101/rsync-exclude-according-to-gitignore-hgignore-svnignore-like-filter-c).
+I learned a lot of how to write this by combining a few answers in [this StackOverflow discussion](https://stackoverflow.com/questions/13713101/rsync-exclude-according-to-gitignore-hgignore-svnignore-like-filter-c).
 
 - `--recursive` recursively copies all directories
 - `--compress` compresses the data before sending, making the transfer significantly faster
