@@ -1,21 +1,21 @@
 +++
-title = 'Copy repos between devices using bash'
+title = 'Sync repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2026-07-21T12:29:27-07:00
+lastmod = 2026-07-21T12:42:16-07:00
 tags = []
 +++
 
-Sometimes it's helpful to copy a Git repository directly from one machine to another without using a Git host like GitHub. If you can SSH into the machine(s) involved, you can use Bash's `rsync` command. Rsync's defaults aren't great for copying repos for several reasons, but a Bash script can fix that.
+Sometimes it's helpful to sync a Git repository directly from one machine to another without using a Git host like GitHub. If you can SSH into the machine(s) involved, you can use Bash's `rsync` command. Rsync's defaults aren't great for syncing repos for several reasons, but a Bash script can fix that.
 
-I named the script `,cp-repo` (copy repo):
+I named the script `,sync-repo`:
 
 ```bash
-,cp-repo . staging:/home/chris/repos/url-shortener
+,sync-repo . staging:/home/chris/repos/url-shortener
 ```
 
 This copies the current directory (`.`) to `/home/chris/repos/url-shortener` in a machine named `staging` as defined in an SSH config file. The first argument is the source, and the second is the destination. Files and folders ignored by Git are not copied. This command can also be used to make a local copy of a local repo by not specifying any remote host.
 
-Here's the contents of my `,cp-repo` file:
+Here's the contents of my `,sync-repo` file:
 
 ```bash
 #!/usr/bin/env bash
@@ -105,4 +105,4 @@ I learned a lot of how to write this by combining a few answers in [this StackOv
 
 `git ls-files --exclude-standard --others --ignored --directory` lists all files and folders in the repo that are being ignored by Git.
 
-I chose to start the `,cp-repo` command's name with a comma because that makes it much less likely to conflict with future commands as explained in [Start all of your commands with a comma](https://rhodesmill.org/brandon/2009/commands-with-comma/).
+I chose to start the `,sync-repo` command's name with a comma because that makes it much less likely to conflict with future commands as explained in [Start all of your commands with a comma](https://rhodesmill.org/brandon/2009/commands-with-comma/).
