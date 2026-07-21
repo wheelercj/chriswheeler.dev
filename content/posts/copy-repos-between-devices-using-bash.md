@@ -13,7 +13,7 @@ I named the script `,sync-repo`:
 ,sync-repo . staging:/home/chris/repos/url-shortener
 ```
 
-This copies the current directory (`.`) to `/home/chris/repos/url-shortener` in a machine named `staging` as defined in an SSH config file. The first argument is the source, and the second is the destination. Files and folders ignored by Git are not copied. This command can also be used to make a local copy of a local repo by not specifying any remote host.
+This syncs the current directory (`.`) to `/home/chris/repos/url-shortener` in a machine named `staging` as defined in an SSH config file. The first argument is the source, and the second is the destination. Files and folders ignored by Git are not copied. This command can also be used to make a local copy of a local repo by not specifying any remote host.
 
 Here's the contents of my `,sync-repo` file:
 
@@ -21,7 +21,7 @@ Here's the contents of my `,sync-repo` file:
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Copies a git repo either locally or to/from another machine. Files and
+# Syncs a git repo either locally or to/from another machine. Files and
 # folders ignored by git are not copied.
 # https://chriswheeler.dev/posts/copy-repos-between-devices-using-bash/
 
@@ -95,7 +95,7 @@ rsync --recursive --compress --rsh=ssh --perms --times --group \
 
 I learned a lot of how to write this by combining a few answers in [this StackOverflow discussion](https://stackoverflow.com/questions/13713101/rsync-exclude-according-to-gitignore-hgignore-svnignore-like-filter-c).
 
-- `--recursive` recursively copies all directories
+- `--recursive` recursively syncs all directories
 - `--compress` compresses the data before sending, making the transfer significantly faster
 - `--rsh=ssh` tells rsync to make the connection over SSH to ensure encryption
 - `--perms` preserves permissions
