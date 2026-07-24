@@ -1,7 +1,7 @@
 +++
 title = 'Getting started with Git and GitHub'
 date = 2021-09-07T14:42:16-08:00
-lastmod = 2026-06-18T19:55:43-07:00
+lastmod = 2026-07-23T23:11:56-07:00
 tags = []
 +++
 
@@ -53,6 +53,7 @@ Another example of a Git workflow with a different use-case is covered in [A suc
 * [How HEAD works in git](https://jvns.ca/blog/2024/03/08/how-head-works-in-git/) by Julia Evans
 * [Creating a GPG key for signing Git commits](https://til.chriswheeler.dev/creating-a-gpg-key-for-signing-git-commits/)
 * [git-branchless: High-velocity, monorepo-scale workflow for Git](https://github.com/arxanas/git-branchless)
+* [newren/git-filter-repo: Quickly rewrite git repository history (filter-branch replacement)](https://github.com/newren/git-filter-repo)
 
 ## alternatives to GitHub
 
