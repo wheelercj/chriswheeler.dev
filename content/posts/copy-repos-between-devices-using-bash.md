@@ -1,7 +1,7 @@
 +++
 title = 'Sync repos between devices using bash'
 date = 2025-10-21T20:51:58-07:00
-lastmod = 2026-07-21T12:42:16-07:00
+lastmod = 2026-08-03T13:04:02-07:00
 tags = []
 +++
 
@@ -46,7 +46,7 @@ if [[ "$DEST" =~ \.\. ]]; then
     echo 'Error: destination cannot contain ".."' >&2
     exit 1
 fi
-if [[ "$DEST" =~ ^([^:]+):(.*)$ ]]; then
+if [[ "$DEST" =~ ^([^:]+):([^:]*)$ ]]; then
     # DEST is remote
     DEST_PATH="${BASH_REMATCH[2]}"
 else
